@@ -62,7 +62,7 @@ local Button = Tab:CreateButton({
 	end
 }) local Button = Tab:CreateButton({
 	Name = "Get Mini Yoru + Inf Money",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("Eternal Dagger",-100000000,"Beli")
 	end
@@ -74,7 +74,7 @@ local Button = Tab:CreateButton({
 	end
 }) local Button = Tab:CreateButton({
 	Name = "Get Sharp Blade + Inf Money",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("Sharp Blade",-100000000,"Beli")
 	end
@@ -653,7 +653,7 @@ end)
 
 local Button = Misc:CreateButton({
 	Name = "Anti Afk",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function(vu)
 local vu = game:GetService("VirtualUser")
 	game:GetService("Players").LocalPlayer.Idled:connect(function()
