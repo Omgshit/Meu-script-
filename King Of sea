@@ -98,7 +98,7 @@ local Section = stats:CreateSection("inf Stats")
 
 local Button = stats:CreateButton({
 	Name = "Get Inf Stats (VISUAL)",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 game:GetService("Players").LocalPlayer.Stats.Sword.Value = 100000
 game:GetService("Players").LocalPlayer.Stats.Defensive.Value = 100000
