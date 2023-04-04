@@ -185,7 +185,7 @@ local Tab = Window:CreateTab("Esps")
 
 	Tab:CreateToggle({
 		Name = "ESP",
-		CurrentValue = false,
+		CurrentValue = false, 
 		Flag = "ESP",
 		Callback = function(x)
 			ESP:Toggle(x)
