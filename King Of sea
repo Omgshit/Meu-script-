@@ -56,7 +56,7 @@ end
 
 local Button = Tab:CreateButton({
 	Name = "Get Yoru + Inf Money",
-	Interact = "APERTAR",
+	Interact ="press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("Eternal Blade",-100000000,"Beli")
 	end
@@ -68,7 +68,7 @@ local Button = Tab:CreateButton({
 	end
 }) local Button = Tab:CreateButton({
 	Name = "Get Pipe + Inf Money",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("Pipe",-100000000,"Beli")
 	end
@@ -80,13 +80,13 @@ local Button = Tab:CreateButton({
 	end
 }) local Button = Tab:CreateButton({
 	Name = "Get True Triple Katana + Inf Money",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("True Triple Katana",-100000000,"Beli")
 	end
 }) local Button = Tab:CreateButton({
 	Name = "Get Jitte + Inf Money",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("ReplicatedStorage").Remotes.SwordPurchaseRE:FireServer("Jitte",-100000000,"Beli")
 	end
@@ -98,7 +98,7 @@ local Section = stats:CreateSection("inf Stats")
 
 local Button = stats:CreateButton({
 	Name = "Get Inf Stats (VISUAL)",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 game:GetService("Players").LocalPlayer.Stats.Sword.Value = 100000
 game:GetService("Players").LocalPlayer.Stats.Defensive.Value = 100000
@@ -107,7 +107,7 @@ game:GetService("Players").LocalPlayer.Stats.Ability.Value = 100000
 end
 }) local Button = stats:CreateButton({
 	Name = "Get Inf Stats",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 game:GetService("Players").LocalPlayer.PlayerGui.Profile.Stats.Power:FireServer("Sword",-10000000)
 end
@@ -236,7 +236,7 @@ local Label = Misc:CreateLabel("Server")
 
 local Button = Misc:CreateButton({
 	Name = "Server Hop",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
     local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 module:Teleport(game.PlaceId)
@@ -245,7 +245,7 @@ module:Teleport(game.PlaceId)
 
 local Button = Misc:CreateButton({
 	Name = "Reentrar (FORCE RESET)",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	game:GetService("TeleportService"):Teleport(7758961785, game:GetService("Players").LocalPlayer)
 	end
@@ -303,7 +303,7 @@ local Slider = Misc:CreateSlider({
 
 local Button = Misc:CreateButton({
 	Name = "Infinity Jump",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 	local InfiniteJumpEnabled = true
     game:GetService("UserInputService").JumpRequest:connect(function()
@@ -316,7 +316,7 @@ local Button = Misc:CreateButton({
 
 local Button = Misc:CreateButton({
 	Name = "Fly (Mobile)",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Credits";
@@ -672,7 +672,7 @@ local Label = fps:CreateLabel("Fps Boost/just to activate")
 
 local Button = fps:CreateButton({
     Name = "FPS Boost",
-    Interact = "APERTAR",
+    Interact = "press",
     Callback = function()
 local decalsyeeted = true
 local g = game
@@ -718,7 +718,7 @@ end
 
 local Button = fps:CreateButton({
     Name = "FPS Boost V2",
-    Interact = "APERTAR",
+    Interact = "press",
     Callback = function()
 local a = game
 local b = a.Workspace
@@ -765,7 +765,7 @@ end
 
 local Button = fps:CreateButton({
     Name = "Anti Lag",
-    Interact = "APERTAR",
+    Interact = "press",
     Callback = function()
 for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
 if v:IsA("BasePart") and not v.Parent:FindFirstChild("Humanoid") then --- i stole this from the actual game LOL >-<
@@ -781,7 +781,7 @@ local Label = Misc:CreateLabel("Script")
 
 local Button = Misc:CreateButton({
 	Name = "Destroy UI",
-	Interact = "APERTAR",
+	Interact = "press",
 	Callback = function()
     Rayfield:Destroy()
 	end
