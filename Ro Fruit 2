@@ -1,0 +1,20 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))()
+local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl)
+local Tab = CenterHubNo1:CreateTab("Main")
+local Sector1 = Tab:CreateSector("Main","left")
+Sector1:AddLabel("Give Swords")
+Sector1:AddToggle("Auto Attack",false,function(t)
+   _G.AutoAttack = t
+end)
+
+spawn(function()
+pcall(function()
+while wait() do
+if _G.AutoAttack then
+pcall(function()
+game:GetService("ReplicatedStorage").Document.DevilFruit_Event.OneEvent:FireServer("Combat")
+end)
+end
+end
+end)
+end) Sector1:AddButton("Give Katana",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Katana") end)  Sector1:AddButton("Give Triple Katana",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Dual Katana") end) Sector1:AddButton("Give Triple Katana",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Triple Katana") end) Sector1:AddButton("Give Asta Sword",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Asta Sword") end) Sector1:AddButton("Give Saber",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Saber") end) Sector1:AddButton("Give Excalibur",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Excalibur") end) Sector1:AddButton("Give Yami Sword",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Yami Sword") end) Sector1:AddButton("Give Dual Kirito",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Dual Kirito") end) Sector1:AddButton("Give Dark Blade",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Dark Blade") end) Sector1:AddButton("Give Dark BladeV2",function()  print("")game:GetService("ReplicatedStorage").Inventory_:FireServer("Sword","Dark BladeV2") end)
