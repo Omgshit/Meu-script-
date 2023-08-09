@@ -1,0 +1,126 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))()
+
+local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl)
+
+local Tab = CenterHubNo1:CreateTab("Main")
+
+local Sector1 = Tab:CreateSector("Main","left")
+
+Sector1:AddLabel("Auto Farm")
+
+Sector1:AddToggle("Auto Farm Npc Events",false,function(t)
+
+   _G.AutoFarmNpcEvents = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoFarmNpcEvents then
+
+pcall(function()
+
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -778.13, 16.1621, 2731.56)}):Play()  end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Spam Barion Rasenga",false,function(t)
+
+   _G.AutoSpamBarionRasenga = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoSpamBarionRasenga then
+
+pcall(function()
+
+game:GetService("ReplicatedStorage").Document.BarionRasengan:FireServer() end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Use All Skills",false,function(t)
+
+   _G.AutoUseAllSkills = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoUseAllSkills then
+
+pcall(function()
+
+   
+
+game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent3:FireServer() game:GetService("ReplicatedStorage").OneForAll.OneForAllEffect4:FireServer()game:GetService("ReplicatedStorage").Rubber.GatlingEffect:FireServer()game:GetService("ReplicatedStorage").Rubber.BazookaEffect:FireServer()game:GetService("ReplicatedStorage").Rubber.GatlingEvent:FireServer()game:GetService("ReplicatedStorage").Rubber.RubberEffect:FireServer()game:GetService("ReplicatedStorage").Rubber.RubberEvent:FireServer()game:GetService("ReplicatedStorage").Document["Asta Blade"].Asta:FireServer()game:GetService("ReplicatedStorage").Document.Gojo:FireServer()game:GetService("ReplicatedStorage").Document.JirenPower:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Dark.DarkEmpeorEvent:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Dark.DarkEmpeorEffect:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEffect4:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent4:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEffect3:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent3:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent2:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEffect2:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEffect:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent:FireServer()game:GetService("ReplicatedStorage").Document.YamatoV2:FireServer()game:GetService("ReplicatedStorage").Document.TWOH:FireServer()game:GetService("ReplicatedStorage").Document.Chidori:FireServer()game:GetService("ReplicatedStorage").Document.BarionRasengan:FireServer()game:GetService("ReplicatedStorage").Document["Made In Heaven"]:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEffect:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEffect2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEffect:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEffect2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.SoulCane.SoulCaneEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.SoulCane.SoulCaneEffect2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.SoulCane.SoulCaneEffect:FireServer()game:GetService("ReplicatedStorage").Document._Sword.SoulCane.SoulCaneEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaEffect:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaSlasherEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaSlasher:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Habakira.HabakiraEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Habakira.HabakiraEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Shusui.ShusuiEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Shusui.ShusuiEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Yoru.YoruEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Yoru.YoruEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Enma.EnmaSlasherEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEvent2:FireServer()game:GetService("ReplicatedStorage").Document._Sword.Neproleon.NeproleonEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEvent:FireServer()game:GetService("ReplicatedStorage").Document._Sword.HalloweenScythe.HalloweenScytheEvent2:FireServer()game:GetService("ReplicatedStorage").Document.BarionRasengan:FireServer()game:GetService("ReplicatedStorage").Document.TWOH:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEffect:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent2:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent3:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Shadow.ShadowEvent4:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Dark.DarkEvent:FireServer()game:GetService("ReplicatedStorage").Document.DevilFruit.Dark.DarkEmpeorEvent:FireServer()game:GetService("ReplicatedStorage").Document.Gojo:FireServer()
+
+end)
+
+end
+
+end
+
+end)
+
+end) local Sector2 = Tab:CreateSector("Second Map","Right")
+
+Sector2:AddLabel("Second Sea")
+
+Sector2:AddButton("Terleport to Npc Second Sea",function()  print("")game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -876.208, 12.9923, -1400.24)}):Play() end)     
+
+local Sector3 = Tab:CreateSector("Auto Stats Here","left")
+
+Sector3:AddLabel("Auto Stats")
+
+Sector3:AddToggle("Auto Stats All",false,function(t)
+
+   _G.AutoStatsAll= t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoStatsAll then
+
+pcall(function()
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.StatsGui.Background["+1000"].RemoteEvent:FireServer() 
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("Melee") 
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("Sword") 
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("DevilFruit") 
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("MaxHealth") end)
+
+end
+
+end
+
+end)
+
+end)
