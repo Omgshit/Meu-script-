@@ -1,0 +1,114 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))()
+
+local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl)
+
+local Tab = CenterHubNo1:CreateTab("Main")
+
+local Sector1 = Tab:CreateSector("Main","left")
+
+Sector1:AddLabel("Script Only For Auto Spin")
+
+Sector1:AddToggle("Auto Spin Fruit",false,function(t)
+
+   _G.AutoSpinFruit= t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoSpinFruit then
+
+pcall(function()
+
+
+game:GetService("ReplicatedStorage").Remotes.CodesRE:FireServer("THANKS60KFAV")
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("SPINB",false,false,false)
+game:GetService("ReplicatedStorage").Remotes.SpinsRE:FireServer("GIVE") 
+game:GetService("ReplicatedStorage").Deletefruitlol:FireServer("Blood Fruit","12") 
+game:GetService("ReplicatedStorage").Deletefruitlol:FireServer("Barrier Fruit","12") 
+game:GetService("ReplicatedStorage").Deletefruitlol:FireServer("Bomb Fruit","12") end)
+
+end
+
+end
+
+end)
+
+end)
