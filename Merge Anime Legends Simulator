@@ -1,0 +1,437 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))()
+
+local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl)
+
+local Tab = CenterHubNo1:CreateTab("Main")
+
+local Sector1 = Tab:CreateSector("Main","left")
+
+Sector1:AddLabel("Auto Farm")
+
+Sector1:AddToggle("Auto Attack",false,function(t)
+
+   _G.AutoAttack = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoAttack then
+
+pcall(function()
+
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RE.OnClickRequest:FireServer() end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Buy Swords",false,function(t)
+
+   _G.AutoBuySwords = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoBuySwords then
+
+pcall(function()
+
+   
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("MasterSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("VampireSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("TanjiroSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("ScimitarSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("MuichiroSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("FalchionSword")
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("PirateSword") game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("StoneSword") game:GetService("ReplicatedStorage").src.Packages.Knit.Services.SwordService.__comm__.RF.OnSwordPurchaseRequest:InvokeServer("Slayer Sword")
+
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Claim Gifts",false,function(t)
+
+   _G.AutoClaimGifts = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoClaimGifts then
+
+pcall(function()
+
+   
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift1") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift2") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift3") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift4") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift5") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift6") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift7") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift8") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift9") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift10") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift11") 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.GiftsService.__comm__.RF.OnGiftClaimRequest:InvokeServer("Gift12")
+
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Claim Quest",false,function(t)
+
+   _G.AutoClaimQuest = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoClaimQuest then
+
+pcall(function()
+
+
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.DailyQuestsService.__comm__.RF.OnQuestCompletedClaimRequest:InvokeServer("LevelUp")
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.DailyQuestsService.__comm__.RF.OnQuestCompletedClaimRequest:InvokeServer("KillMonsters")
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.DailyQuestsService.__comm__.RF.OnQuestCompletedClaimRequest:InvokeServer("TimePlayed") 
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.DailyQuestsService.__comm__.RF.OnQuestCompletedClaimRequest:InvokeServer("OpenEggs") 
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.DailyQuestsService.__comm__.RF.OnQuestCompletedClaimRequest:InvokeServer("BuyCharacters") end)
+
+end
+
+end
+
+end)
+
+end) local Sector2 = Tab:CreateSector("Auto Eggs","Right")
+
+Sector2:AddLabel("Egg Section")
+
+
+Sector2:AddToggle("Auto Egg 1",false,function(t)
+
+   _G.AutoEgg1 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg1 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(    -6414.150390625, 364.2497863769531, 67.28065490722656 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg1")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 2",false,function(t)
+
+   _G.AutoEgg2 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg2 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -6427.501953125, 364.4272155761719, 67.98828887939453 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg2")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 3",false,function(t)
+
+   _G.AutoEgg3 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg3 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -6452.05615234375, 364.4024658203125, 67.71292114257812 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg3")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 4",false,function(t)
+
+   _G.AutoEgg4 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg4 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(  -6466.7705078125, 363.8162841796875, 61.793609619140625 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg4")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 5",false,function(t)
+
+   _G.AutoEgg5 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg5  then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(    -6414.23193359375, 367.72625732421875, 87.97120666503906 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg5")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 6",false,function(t)
+
+   _G.AutoEgg6 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg6 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(    -6428.37890625, 367.7790222167969, 88.53083801269531 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg6")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 7",false,function(t)
+
+   _G.AutoEgg7 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg7 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(    -6451.9951171875, 367.7262268066406, 89.2288818359375 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg7")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Egg 8",false,function(t)
+
+   _G.AutoEgg8 = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEgg8 then
+
+pcall(function()
+
+    
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(    -6466.671875, 367.96673583984375, 85.53173065185547 )}):Play()
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEggOpenRequest:InvokeServer("Egg8")
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddToggle("Auto Equip Best",false,function(t)
+
+   _G.AutoEquipBest= t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait() do
+
+if _G.AutoEquipBest then
+
+pcall(function()
+
+    
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.PetService.__comm__.RF.OnEquipBestPetsRequest:InvokeServer()
+
+end)
+
+end
+
+end
+
+end)
+
+end) local Sector3 = Tab:CreateSector("Auto Upgrades","left")
+
+Sector3:AddLabel("Auto Upgrades Here")
+
+Sector3:AddToggle("Auto Upgrades All",false,function(t)
+
+   _G.AutoUpgradesAll = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoUpgradesAll then
+
+pcall(function()
+
+
+ 
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.UpgradeService.__comm__.RF.OnUpgradeRequest:InvokeServer("Speed")
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.UpgradeService.__comm__.RF.OnUpgradeRequest:InvokeServer("Legends")
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.UpgradeService.__comm__.RF.OnUpgradeRequest:InvokeServer("Crystals")
+
+game:GetService("ReplicatedStorage").src.Packages.Knit.Services.UpgradeService.__comm__.RF.OnUpgradeRequest:InvokeServer("Coins") end)
+
+end
+
+end
+
+end)
+
+end)
