@@ -1,0 +1,425 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))()
+
+local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl)
+
+local Tab = CenterHubNo1:CreateTab("Main")
+
+local Sector1 = Tab:CreateSector("Main","left")
+
+Sector1:AddLabel("Auto Farm")
+
+Sector1:AddToggle("Auto Farm Npcs Need Light",false,function(t)
+
+   _G.AutoFarmNpcsNeedLight= t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoFarmNpcsNeedLight then
+
+pcall(function()
+
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if v:IsA("Tool") then
+v.Parent = game.Players.LocalPlayer.Character
+end
+end
+
+
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(   1739.169921875, 55.576995849609375, -5.936161518096924  )}):Play()
+
+
+local args = {
+    [1] = CFrame.new(1783.2281494140625, 52.765926361083984, -31.907915115356445, 0.7883546352386475, 0.46446797251701355, -0.4034433960914612, -1.5251124807491578e-09, 0.6557697653770447, 0.7549610137939453, 0.6152211427688599, -0.5951769948005676, 0.5169790983200073),
+    [2] = Vector3.new(0.4034433960914612, -0.7549610137939453, -0.5169790983200073),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1699.6785888671875, 54.858036041259766, -40.98576354980469, 0.5697557926177979, -0.48166313767433167, 0.6658672094345093, -9.067253614603032e-09, 0.8102407455444336, 0.5860974192619324, -0.8218141198158264, -0.33393239974975586, 0.46163928508758545),
+    [2] = Vector3.new(-0.6658672094345093, -0.5860974192619324, -0.46163928508758545),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1704.5355224609375, 56.860992431640625, 27.27428436279297, -0.5146763324737549, -0.567915678024292, 0.6423240303993225, 9.074303086720192e-09, 0.7491668462753296, 0.6623814105987549, -0.8573846817016602, 0.3409120440483093, -0.38557836413383484),
+    [2] = Vector3.new(-0.6423240303993225, -0.6623814105987549, 0.38557836413383484),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1037.8873291015625, 67.32246398925781, 1214.726318359375, -0.8219007253646851, -0.5276131629943848, 0.21471765637397766, 4.8253103734907654e-09, 0.3769417703151703, 0.9262369275093079, -0.5696309208869934, 0.7612748146057129, -0.3098086416721344),
+    [2] = Vector3.new(-0.21471765637397766, -0.9262369275093079, 0.3098086416721344),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1380.8419189453125, 64.7325668334961, 1115.02392578125, 0.9992871880531311, -0.017503542825579643, 0.03344741836190224, 1.2817201744397266e-09, 0.88601154088974, 0.4636632800102234, -0.037750545889139175, -0.46333277225494385, 0.8853799700737),
+    [2] = Vector3.new(-0.03344741836190224, -0.4636632800102234, -0.8853799700737),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1776.1197509765625, 52.09895324707031, 13.320234298706055, -0.3937598466873169, 0.818191647529602, -0.41894590854644775, -1.1951014400324311e-08, 0.45576566457748413, 0.890099823474884, 0.9192133545875549, 0.35048556327819824, -0.17946220934391022),
+    [2] = Vector3.new(0.41894590854644775, -0.890099823474884, 0.17946220934391022),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1334.268310546875, 64.53433227539062, 1129.098388671875, 0.8124270439147949, 0.24895595014095306, -0.5272411704063416, -8.053316236100727e-09, 0.9042612314224243, 0.42697957158088684, 0.5830628871917725, -0.34688976407051086, 0.7346462607383728),
+    [2] = Vector3.new(0.5272411704063416, -0.42697957158088684, -0.7346462607383728),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1281.335693359375, 63.654781341552734, 1119.7803955078125, 0.5906677842140198, 0.22984115779399872, -0.7734887003898621, 1.026052487418383e-08, 0.9585753679275513, 0.284839391708374, 0.8069149255752563, -0.16824546456336975, 0.566199541091919),
+    [2] = Vector3.new(0.7734887003898621, -0.284839391708374, -0.566199541091919),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4345.3125, 220.81784057617188, 319.8475341796875, 0.5993286967277527, -0.3454497754573822, 0.7221286296844482, 1.119145665029464e-08, 0.9020935893058777, 0.4315408170223236, -0.800503134727478, -0.2586348056793213, 0.540650486946106),
+    [2] = Vector3.new(-0.7221286296844482, -0.4315408170223236, -0.540650486946106),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4021.935302734375, 123.12676239013672, -60.02308654785156, 0.7067004442214966, 0.5679683685302734, -0.4218844175338745, 4.201021752692213e-09, 0.5962921977043152, 0.8027675151824951, 0.7075129151344299, -0.5673161745071411, 0.42139992117881775),
+    [2] = Vector3.new(0.4218844175338745, -0.8027675151824951, -0.42139992117881775),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4574.982421875, 68.91399383544922, -1602.8419189453125, 0.026461321860551834, -0.08405546098947525, 0.996109664440155, -1.5197788860721317e-10, 0.9964587092399597, 0.0840848982334137, -0.9996499419212341, -0.0022249978501349688, 0.026367608457803726),
+    [2] = Vector3.new(-0.996109664440155, -0.0840848982334137, -0.026367608457803726),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4638.8466796875, 68.89501953125, -1545.2373046875, 0.1503191739320755, 0.36576563119888306, -0.9184877872467041, -4.726584901248998e-09, 0.9290441274642944, 0.36996936798095703, 0.9886376261711121, -0.05561348423361778, 0.13965311646461487),
+    [2] = Vector3.new(0.9184877872467041, -0.36996936798095703, -0.13965311646461487),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4466.98779296875, 216.958251953125, 102.84626770019531, 0.13158723711967468, -0.6458428502082825, 0.752045214176178, -9.836465864054844e-09, 0.7586419582366943, 0.6515079736709595, -0.9913046360015869, -0.08573014289140701, 0.0998275876045227),
+    [2] = Vector3.new(-0.752045214176178, -0.6515079736709595, -0.0998275876045227),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4001.019775390625, 123.12676239013672, 2.8438854217529297, 0.8494729995727539, 0.42458680272102356, -0.3132440745830536, 4.876008929954878e-09, 0.593678891658783, 0.8047021627426147, 0.5276322364807129, -0.6835727691650391, 0.504314124584198),
+    [2] = Vector3.new(0.3132440745830536, -0.8047021627426147, -0.504314124584198),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4003.435791015625, 123.12676239013672, -34.49638748168945, -0.1074497327208519, 0.6441643238067627, -0.757302463054657, 6.456062351389846e-10, 0.7617124319076538, 0.6479153633117676, 0.9942106008529663, 0.0696183294057846, -0.08184579014778137),
+    [2] = Vector3.new(0.757302463054657, -0.6479153633117676, 0.08184579014778137),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-3599.5439453125, 39.723297119140625, -1026.537353515625, -0.7561861276626587, -0.057239092886447906, 0.651848316192627, 2.0875443595969045e-09, 0.9961668252944946, 0.08747386187314987, -0.6543565392494202, 0.06614652276039124, -0.7532876133918762),
+    [2] = Vector3.new(-0.651848316192627, -0.08747386187314987, 0.7532876133918762),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-2719.219970703125, 125.44939422607422, -91.4604721069336, -0.854529619216919, 0.32666879892349243, -0.4038151502609253, -5.0464463718924435e-09, 0.7774606943130493, 0.6289317011833191, 0.5194026827812195, 0.5374407768249512, -0.6643632054328918),
+    [2] = Vector3.new(0.4038151502609253, -0.6289317011833191, 0.6643632054328918),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-2913.0029296875, 382.99920654296875, 2737.670654296875, -0.9860672950744629, 0.1263805478811264, -0.10816359519958496, 4.83800377537591e-09, 0.6502278447151184, 0.759739339351654, 0.16634723544120789, 0.7491540908813477, -0.6411683559417725),
+    [2] = Vector3.new(0.10816359519958496, -0.759739339351654, 0.6411683559417725),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddButton("Generate Legendary For get Light",function()  print("")game:GetService("Players").LocalPlayer.PlayerGui.SpinUI.Chat.Yes.Spin.Reward:FireServer("Legendary") end)
+ Sector1:AddButton("Terleport to Portal Second Sea",function()  print("")game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -1014.590576171875, 45.26057434082031, 1855.150390625 )}):Play() end)     
+
+Sector1:AddButton("Get All Accesories",function()  print("")local accessories = {'Lucy Helmet', 'BigMomHat', 'DoflamingoCape', 'ShanksCape', 'KaidoCape', 'KizaruCape', 'KiddCape', 'StrawHat', 'PirateKingCape'}
+local A_1 = "Buy"
+local A_2 = "Diamond"
+local A_4 = 0
+local Event = game:GetService("ReplicatedStorage").BonusFolderFX.BoughAAccessory
+
+for _, accessoryName in ipairs(accessories) do
+    local A_3 = accessoryName
+    Event:FireServer(A_1, A_2, A_3, A_4)
+end end)   Sector1:AddButton("Get All Swords",function()  print("")local swords = {'DualKatana', 'YoruVersion2', 'DarkBlade', 'Saber', 'Hassaikai', 'Napoleon', 'AceCutlass', 'TripleKatana', 'TripleYoru', 'RedKatana', 'Kiribachi', 'Katana', 'GreenKatana', 'FrozenKatana', 'FlameSword', 'CandyCane', 'BlueKatana', 'Bisento'}
+local A_1 = "Buy"
+local A_3 = 0
+local Event = game:GetService("ReplicatedStorage").BonusFolderFX.BoughASword
+
+for _, swordName in ipairs(swords) do
+    local A_2 = swordName
+    Event:FireServer(A_1, A_2, A_3)
+end end)     
+local Sector2= Tab:CreateSector("Auto Dungeon Here","Right")
+
+Sector2:AddLabel("Dungeon Mode") 
+
+Sector2:AddToggle("Auto Dungeon",false,function(t)
+
+   _G.AutoDungeon = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoDungeon then
+
+pcall(function()
+
+
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(   -114.69784545898438, 78.05127716064453, 16159.3671875 )}):Play()
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if v:IsA("Tool") then
+v.Parent = game.Players.LocalPlayer.Character
+end
+end
+
+
+local range = 99e9
+
+
+local player = game:GetService("Players").LocalPlayer
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+local args = {
+    [1] = CFrame.new(1783.2281494140625, 52.765926361083984, -31.907915115356445, 0.7883546352386475, 0.46446797251701355, -0.4034433960914612, -1.5251124807491578e-09, 0.6557697653770447, 0.7549610137939453, 0.6152211427688599, -0.5951769948005676, 0.5169790983200073),
+    [2] = Vector3.new(0.4034433960914612, -0.7549610137939453, -0.5169790983200073),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1699.6785888671875, 54.858036041259766, -40.98576354980469, 0.5697557926177979, -0.48166313767433167, 0.6658672094345093, -9.067253614603032e-09, 0.8102407455444336, 0.5860974192619324, -0.8218141198158264, -0.33393239974975586, 0.46163928508758545),
+    [2] = Vector3.new(-0.6658672094345093, -0.5860974192619324, -0.46163928508758545),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1704.5355224609375, 56.860992431640625, 27.27428436279297, -0.5146763324737549, -0.567915678024292, 0.6423240303993225, 9.074303086720192e-09, 0.7491668462753296, 0.6623814105987549, -0.8573846817016602, 0.3409120440483093, -0.38557836413383484),
+    [2] = Vector3.new(-0.6423240303993225, -0.6623814105987549, 0.38557836413383484),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1037.8873291015625, 67.32246398925781, 1214.726318359375, -0.8219007253646851, -0.5276131629943848, 0.21471765637397766, 4.8253103734907654e-09, 0.3769417703151703, 0.9262369275093079, -0.5696309208869934, 0.7612748146057129, -0.3098086416721344),
+    [2] = Vector3.new(-0.21471765637397766, -0.9262369275093079, 0.3098086416721344),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1380.8419189453125, 64.7325668334961, 1115.02392578125, 0.9992871880531311, -0.017503542825579643, 0.03344741836190224, 1.2817201744397266e-09, 0.88601154088974, 0.4636632800102234, -0.037750545889139175, -0.46333277225494385, 0.8853799700737),
+    [2] = Vector3.new(-0.03344741836190224, -0.4636632800102234, -0.8853799700737),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(1776.1197509765625, 52.09895324707031, 13.320234298706055, -0.3937598466873169, 0.818191647529602, -0.41894590854644775, -1.1951014400324311e-08, 0.45576566457748413, 0.890099823474884, 0.9192133545875549, 0.35048556327819824, -0.17946220934391022),
+    [2] = Vector3.new(0.41894590854644775, -0.890099823474884, 0.17946220934391022),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1334.268310546875, 64.53433227539062, 1129.098388671875, 0.8124270439147949, 0.24895595014095306, -0.5272411704063416, -8.053316236100727e-09, 0.9042612314224243, 0.42697957158088684, 0.5830628871917725, -0.34688976407051086, 0.7346462607383728),
+    [2] = Vector3.new(0.5272411704063416, -0.42697957158088684, -0.7346462607383728),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-1281.335693359375, 63.654781341552734, 1119.7803955078125, 0.5906677842140198, 0.22984115779399872, -0.7734887003898621, 1.026052487418383e-08, 0.9585753679275513, 0.284839391708374, 0.8069149255752563, -0.16824546456336975, 0.566199541091919),
+    [2] = Vector3.new(0.7734887003898621, -0.284839391708374, -0.566199541091919),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4345.3125, 220.81784057617188, 319.8475341796875, 0.5993286967277527, -0.3454497754573822, 0.7221286296844482, 1.119145665029464e-08, 0.9020935893058777, 0.4315408170223236, -0.800503134727478, -0.2586348056793213, 0.540650486946106),
+    [2] = Vector3.new(-0.7221286296844482, -0.4315408170223236, -0.540650486946106),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4021.935302734375, 123.12676239013672, -60.02308654785156, 0.7067004442214966, 0.5679683685302734, -0.4218844175338745, 4.201021752692213e-09, 0.5962921977043152, 0.8027675151824951, 0.7075129151344299, -0.5673161745071411, 0.42139992117881775),
+    [2] = Vector3.new(0.4218844175338745, -0.8027675151824951, -0.42139992117881775),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4574.982421875, 68.91399383544922, -1602.8419189453125, 0.026461321860551834, -0.08405546098947525, 0.996109664440155, -1.5197788860721317e-10, 0.9964587092399597, 0.0840848982334137, -0.9996499419212341, -0.0022249978501349688, 0.026367608457803726),
+    [2] = Vector3.new(-0.996109664440155, -0.0840848982334137, -0.026367608457803726),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4638.8466796875, 68.89501953125, -1545.2373046875, 0.1503191739320755, 0.36576563119888306, -0.9184877872467041, -4.726584901248998e-09, 0.9290441274642944, 0.36996936798095703, 0.9886376261711121, -0.05561348423361778, 0.13965311646461487),
+    [2] = Vector3.new(0.9184877872467041, -0.36996936798095703, -0.13965311646461487),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4466.98779296875, 216.958251953125, 102.84626770019531, 0.13158723711967468, -0.6458428502082825, 0.752045214176178, -9.836465864054844e-09, 0.7586419582366943, 0.6515079736709595, -0.9913046360015869, -0.08573014289140701, 0.0998275876045227),
+    [2] = Vector3.new(-0.752045214176178, -0.6515079736709595, -0.0998275876045227),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4001.019775390625, 123.12676239013672, 2.8438854217529297, 0.8494729995727539, 0.42458680272102356, -0.3132440745830536, 4.876008929954878e-09, 0.593678891658783, 0.8047021627426147, 0.5276322364807129, -0.6835727691650391, 0.504314124584198),
+    [2] = Vector3.new(0.3132440745830536, -0.8047021627426147, -0.504314124584198),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-4003.435791015625, 123.12676239013672, -34.49638748168945, -0.1074497327208519, 0.6441643238067627, -0.757302463054657, 6.456062351389846e-10, 0.7617124319076538, 0.6479153633117676, 0.9942106008529663, 0.0696183294057846, -0.08184579014778137),
+    [2] = Vector3.new(0.757302463054657, -0.6479153633117676, 0.08184579014778137),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-3599.5439453125, 39.723297119140625, -1026.537353515625, -0.7561861276626587, -0.057239092886447906, 0.651848316192627, 2.0875443595969045e-09, 0.9961668252944946, 0.08747386187314987, -0.6543565392494202, 0.06614652276039124, -0.7532876133918762),
+    [2] = Vector3.new(-0.651848316192627, -0.08747386187314987, 0.7532876133918762),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-2719.219970703125, 125.44939422607422, -91.4604721069336, -0.854529619216919, 0.32666879892349243, -0.4038151502609253, -5.0464463718924435e-09, 0.7774606943130493, 0.6289317011833191, 0.5194026827812195, 0.5374407768249512, -0.6643632054328918),
+    [2] = Vector3.new(0.4038151502609253, -0.6289317011833191, 0.6643632054328918),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = CFrame.new(-2913.0029296875, 382.99920654296875, 2737.670654296875, -0.9860672950744629, 0.1263805478811264, -0.10816359519958496, 4.83800377537591e-09, 0.6502278447151184, 0.759739339351654, 0.16634723544120789, 0.7491540908813477, -0.6411683559417725),
+    [2] = Vector3.new(0.10816359519958496, -0.759739339351654, 0.6411683559417725),
+    [3] = workspace:WaitForChild("Camera")
+}
+
+game:GetService("Players").LocalPlayer.Character.Light.SkillZ.RemoteEvent:FireServer(unpack(args))
+end)
+
+end
+
+end
+
+end)
+
+end) 
+Sector2:AddToggle("Auto Join Dungeon",false,function(t)
+
+   _G.AutoJoinDungeon = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoJoinDungeon then
+
+pcall(function()
+
+
+game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -2740.010009765625, 467.69921875, 3211.24169921875  )}):Play()
+end)
+
+end
+
+end
+
+end)
+
+end) Sector2:AddLabel("Only use if Dungeon Finished")   
+Sector2:AddButton("Leave The Dungeon",function()  print("")game:GetService("Players").LocalPlayer.PlayerGui.LeaveRaidGUI.GOBACKHOMECHECKSEA.LocalScript.RemoteEvent:FireServer() end)     
+Sector2:AddLabel("Light Skills Inf stats By Night Blue")
+
+local Sector3 = Tab:CreateSector("Op Function","left")
+
+Sector3:AddButton("Inf Geli And Diamond ",function()  print("")game:GetService("ReplicatedStorage").BonusFolderFX.DiamondCodes:FireServer(1000000000000000000,"Code17") game:GetService("ReplicatedStorage").EnterCode:FireServer(1000000000000000000,"Code2") end)     
+
+Sector3:AddLabel("Press 5 times Give Points for set max all")
+
+Sector3:AddButton("Give Points ",function()  print("")game:GetService("ReplicatedStorage").BonusFolderFX.testingstats:FireServer(-1000000000000000000) game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("Melee") end)     
+
+
+Sector3:AddButton("Set Max All ",function()  print("")game:GetService("ReplicatedStorage").BonusFolderFX.testingstats:FireServer(1000000000000000000)
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("DevilFruit")
+game:GetService("ReplicatedStorage").BonusFolderFX.testingstats:FireServer(1000000000000000000)
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("Sword")
+game:GetService("ReplicatedStorage").BonusFolderFX.testingstats:FireServer(1000000000000000000)
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer("MaxHealth") end)     
