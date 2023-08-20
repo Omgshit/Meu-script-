@@ -1,0 +1,216 @@
+function dragify(Frame)
+dragToggle = nil
+dragSpeed = .25 -- You can edit this.
+dragInput = nil
+dragStart = nil
+dragPos = nil
+
+function updateInput(input)
+Delta = input.Position - dragStart
+Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+game:GetService("TweenService"):Create(Frame, TweenInfo.new(.25), {Position = Position}):Play()
+end
+
+Frame.InputBegan:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+dragToggle = true
+dragStart = input.Position
+startPos = Frame.Position
+input.Changed:Connect(function()
+if (input.UserInputState == Enum.UserInputState.End) then
+dragToggle = false
+end
+end)
+end
+end)
+
+Frame.InputChanged:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+dragInput = input
+end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+if (input == dragInput and dragToggle) then
+updateInput(input)
+end
+end)
+end
+
+function Load_Key(key,callback)
+    local PurpleCat = Instance.new("ScreenGui")
+    local Background_Main = Instance.new("Frame")
+    local UIGradient = Instance.new("UIGradient")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local Get_Key_Page = Instance.new("Frame")
+    local Key_Input = Instance.new("TextBox")
+    local UICorner_2 = Instance.new("UICorner")
+    local TextButton = Instance.new("TextButton")
+    local UICorner_3 = Instance.new("UICorner")
+    local TextButton_2 = Instance.new("TextButton")
+    local UICorner_4 = Instance.new("UICorner")
+    local TextLabel_2 = Instance.new("TextLabel")
+    local TextLabel_3 = Instance.new("TextLabel")
+    local Load_Page = Instance.new("Frame")
+    local Load_Text = Instance.new("TextLabel")
+    
+    
+    PurpleCat.Name = "PurpleCat"
+    PurpleCat.Parent = game.CoreGui
+    PurpleCat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    Background_Main.Name = "Background_Main"
+    Background_Main.Parent = PurpleCat
+    Background_Main.BackgroundColor3 = Color3.fromRGB(147, 130, 189)
+    Background_Main.Position = UDim2.new(0.210053861, 0, 0.380219787, 0)
+    Background_Main.Size = UDim2.new(0, 250, 0, 200)
+    dragify(Background_Main)
+    
+    UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 39, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(21, 14, 19))}
+    UIGradient.Rotation = 90
+    UIGradient.Parent = Background_Main
+    
+    UICorner.Parent = Background_Main
+    
+    TextLabel.Parent = Background_Main
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.Position = UDim2.new(0.0544662289, 0, 0.0378006846, 0)
+    TextLabel.Size = UDim2.new(0, 220, 0, 22)
+    TextLabel.Font = Enum.Font.FredokaOne
+    TextLabel.Text = "Omg Hub | Key System"
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 24.000
+    TextLabel.TextStrokeTransparency = 0.600
+    
+    Get_Key_Page.Name = "Get_Key_Page"
+    Get_Key_Page.Parent = Background_Main
+    Get_Key_Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Get_Key_Page.BackgroundTransparency = 1.000
+    Get_Key_Page.Position = UDim2.new(0.0239651408, 0, 0.137457043, 0)
+    Get_Key_Page.Size = UDim2.new(0, 441, 0, 240)
+    
+    if key == nil then
+        Get_Key_Page.Visible = false
+    end
+    
+    Key_Input.Name = "Key_Input"
+    Key_Input.Parent = Get_Key_Page
+    Key_Input.BackgroundColor3 = Color3.fromRGB(147, 130, 189)
+    Key_Input.Position = UDim2.new(0.02, 0, 0.27, 0)
+    Key_Input.Size = UDim2.new(0, 222, 0, 32)
+    Key_Input.Font = Enum.Font.FredokaOne
+    Key_Input.PlaceholderText = "Put Key Here"
+    Key_Input.Text = ""
+    Key_Input.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Key_Input.TextSize = 23.000
+    Key_Input.TextStrokeTransparency = 0.210
+    Key_Input.TextWrapped = true
+    
+    UICorner_2.Parent = Key_Input
+    
+    TextButton.Parent = Get_Key_Page
+    TextButton.BackgroundColor3 = Color3.fromRGB(147, 130, 189)
+    TextButton.Position = UDim2.new(0.020, 0, 0.45, 0)
+    TextButton.Size = UDim2.new(0, 100, 0, 50)
+    TextButton.Font = Enum.Font.FredokaOne
+    TextButton.Text = "Get Link!"
+    TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextButton.TextSize = 21.000
+    TextButton.TextStrokeTransparency = 0.600
+    TextButton.MouseButton1Click:Connect(function()
+	setclipboard("https://direct-link.net/584994/frist-step-to-get-key")
+end)
+    UICorner_3.Parent = TextButton
+    
+    TextButton_2.Parent = Get_Key_Page
+    TextButton_2.BackgroundColor3 = Color3.fromRGB(147, 130, 189)
+    TextButton_2.Position = UDim2.new(0.30, 0, 0.45, 0)
+    TextButton_2.Size = UDim2.new(0, 100, 0, 50)
+    TextButton_2.Font = Enum.Font.FredokaOne
+    TextButton_2.Text = "Submit"
+    TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextButton_2.TextSize = 21.000
+    TextButton_2.TextStrokeTransparency = 0.600
+    TextButton_2.MouseButton1Click:Connect(function()
+	if Key_Input.Text == key then
+	    Load_Page.Visible = true
+	     Get_Key_Page.Visible = false
+		pcall(callback , true)
+	    else
+	        Get_Key_Page.Visible = false
+           --
+           Load_Page.Visible = true
+           
+           for i = 1,10 do 
+            wait(.02)
+           Load_Text.Text = "Wrong Key "
+                      wait(.02)
+           Load_Text.Text = "Wrong Key ."
+                      wait(.02)
+           Load_Text.Text = "Wrong Key . ."
+           wait(.02)
+           Load_Text.Text = "Wrong Key . . ."
+           end
+           Load_Page.Visible = false
+           Get_Key_Page.Visible = true
+	end
+       
+    end)
+    UICorner_4.Parent = TextButton_2
+    
+    TextLabel_2.Parent = Get_Key_Page
+    TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_2.BackgroundTransparency = 1.000
+    TextLabel_2.Position = UDim2.new(-0.2, 0, 0, 0)
+    TextLabel_2.Size = UDim2.new(0, 409, 0, 40)
+    TextLabel_2.Font = Enum.Font.FredokaOne
+    TextLabel_2.Text = "Press Get Key! Button"
+    TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_2.TextSize = 19.000
+    TextLabel_2.TextStrokeTransparency = 0.600
+    TextLabel_2.TextWrapped = true
+    
+    TextLabel_3.Parent = Get_Key_Page
+    TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_3.BackgroundTransparency = 1.000
+    TextLabel_3.Position = UDim2.new(-0.2, 0, 0.0951460525, 0)
+    TextLabel_3.Size = UDim2.new(0, 409, 0, 40)
+    TextLabel_3.Font = Enum.Font.FredokaOne
+    TextLabel_3.Text = "Copy Key Link"
+    TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_3.TextSize = 19.000
+    TextLabel_3.TextStrokeTransparency = 0.600
+    TextLabel_3.TextWrapped = true
+    
+    Load_Page.Name = "Load_Page"
+    Load_Page.Parent = Background_Main
+    Load_Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Load_Page.BackgroundTransparency = 1.000
+    Load_Page.Position = UDim2.new(0.0239651408, 0, 0.137457043, 0)
+    Load_Page.Size = UDim2.new(0, 441, 0, 240)
+    Load_Page.Visible = false
+    
+    Load_Text.Name = "Load_Text"
+    Load_Text.Parent = Load_Page
+    Load_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Load_Text.BackgroundTransparency = 1.000
+    Load_Text.Position = UDim2.new(0.04, 0, 0.2, 0)
+    Load_Text.Size = UDim2.new(0, 200, 0, 50)
+    Load_Text.Font = Enum.Font.FredokaOne
+    Load_Text.Text = "Loading . . ."
+    Load_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Load_Text.TextSize = 26.000
+    Load_Text.TextStrokeTransparency = 0.600
+    
+
+    if key == nil then
+        Load_Page.Visible = true
+	wait (1)
+	pcall(callback , true)
+    end
+    
+    return Load_Text
+end
+return Load_Key
