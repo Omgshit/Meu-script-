@@ -13,7 +13,7 @@ elseif game.PlaceId == 11448431235 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
     elseif game.PlaceId == 9144187696 then
     print ("A Piece")
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
 elseif game.PlaceId == 12153639244 then
     print ("Anime Max Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Max%20Simulator"))()
@@ -26,4 +26,5 @@ elseif game.PlaceId == 12364861304 then
 elseif game.PlaceId == 12364861304 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
+else
 end
