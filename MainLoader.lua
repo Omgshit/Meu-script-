@@ -5,10 +5,10 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
         end
     end
 end)
-if game.PlaceId == 10598963932 then
+if game.PlaceId == then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
-elseif game.PlaceId == 11448431235 then
+elseif game.PlaceId == then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
 elseif game.PlaceId == 9144187696 then
