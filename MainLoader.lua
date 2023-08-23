@@ -22,6 +22,14 @@ elseif game.PlaceId == 12988931150 then
     else
         print ("Merge Anime Legends Simulator")
 
-print ("Game not foud")
+
+    
+    
+    
+    
+    
+    
+    
+    print ("Game not foud")
 
 end
