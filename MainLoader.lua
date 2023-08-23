@@ -5,7 +5,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
         end
     end
 end)
-elseif game.PlaceId == 10598963932 then
+if game.PlaceId == 10598963932 then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 11448431235 then
@@ -16,7 +16,7 @@ elseif game.PlaceId == 11448431235 then
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
 elseif game.PlaceId == 12153639244 then
     print ("Anime Max Simulator")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Max%20Simulator"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Max%20Simulator"))()
 elseif game.PlaceId == 12988931150 then
     print ("Merge Anims Legends Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
