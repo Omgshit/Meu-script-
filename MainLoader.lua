@@ -5,10 +5,10 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
         end
     end
 end)
-if game.PlaceId == nil then
+if game.PlaceId == 10598963932 then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
-elseif game.PlaceId == nil then
+elseif game.PlaceId == 11448431235 then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
 elseif game.PlaceId == 9144187696 then
@@ -20,16 +20,5 @@ elseif game.PlaceId == 12153639244 then
 elseif game.PlaceId == 12988931150 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
     else
-        print ("Merge Anime Legends Simulator")
-
-
-    
-    
-    
-    
-    
-    
-    
-    print ("Game not foud")
-
+        print ("Game not found")
 end
