@@ -5,7 +5,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
         end
     end
 end)
-if game.PlaceId == 10598963932 then
+elseif game.PlaceId == 10598963932 then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 11448431235 then
@@ -23,9 +23,7 @@ elseif game.PlaceId == 12988931150 then
 elseif game.PlaceId == 12364861304 then
     print ("Second Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
-        elseif game.PlaceId == 12364861304 then
+elseif game.PlaceId == 12364861304 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
-        
-    print ("Game not found")
 end
