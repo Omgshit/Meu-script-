@@ -20,5 +20,8 @@ elseif game.PlaceId == 12153639244 then
 elseif game.PlaceId == 12988931150 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
     else
-        print ("Game not found")
+        print ("Merge Anime Legends Simulator")
+
+print ("Game not foud")
+
 end
