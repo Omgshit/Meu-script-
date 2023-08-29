@@ -1,1 +1,1138 @@
 
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/IDK/main/GUI56"))() local CenterHubNo1 = library:CreateWindow(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,Enum.KeyCode.RightControl) local Tab = CenterHubNo1:CreateTab("Main") local Sector1 = Tab:CreateSector("Main","left") Sector1:AddLabel("Auto Farm") Sector1:AddToggle("Auto Attack",false,function(t) _G.AutoAttack = t end) spawn(function() pcall(function() while wait() do if _G.AutoAttack then pcall(function() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"Click"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"Click"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"Click"}) end) end end end)  end)  Sector1:AddToggle("Auto Collect Coins",false,function(t) _G.AutoCollectCoins = t end) spawn(function() pcall(function() while wait() do if _G.AutoCollectCoins then pcall(function()    for i,v in pairs(game:GetService("Workspace").Debris:GetChildren()) do    if v:IsA("Part") and v:FindFirstChild("BillboardGui")then    v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end  end) end end end)  end)  Sector1:AddToggle("Auto Finish All Quests",false,function(t) _G.AutoFinishAllQuests = t end) spawn(function() pcall(function() while wait() do if _G.AutoFinishQuests then pcall(function() local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Demon Slayer",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Demon Slayer",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Jujutsu Kaisen",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Jujutsu Kaisen",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Dragon Ball",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Dragon Ball",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Naruto",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Naruto",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Sword Art Online",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Sword Art Online",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "Attack On Titan",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "Attack On Titan",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "GiveReward",
+        [2] = "Mission",
+        [3] = "One Piece",
+        [4] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Give Mission",
+        [2] = "One Piece",
+        [3] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+end) end end end)  end) Sector1:AddLabel("Wait for kick after use Auto Get Rank") Sector1:AddToggle("Auto Get Rank Max",false,function(t) _G.AutoGetRankMax = t end) spawn(function() pcall(function() while wait(1) do if _G.AutoGetRankMax then pcall(function() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"Rank Up"}) 
+            if game:GetService("Players").LocalPlayer.leaderstats.Rank.Value == "Pirate King" then
+game.Players.LocalPlayer:Kick("You Got Max Rank!") end end) end end end)  end) Sector1:AddToggle("Auto Give All Pets And Inf Yen",false,function(t)
+
+   _G.AutoGiveAllPetsAndInfYen = t
+
+end)
+
+spawn(function()
+
+pcall(function()
+
+while wait(.5) do
+
+if _G.AutoGiveAllPetsAndInfYen then
+
+pcall(function()
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Shanks",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Mihawk",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Luffy",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Asuna",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Alice",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Colossal",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Eren",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Jogo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Gojo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Beerus",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Broly",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Hashirama",
+        [5] = -150000000000000000000000000000000000000000
+    }
+} 
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Minato",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Douma",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Yorichii",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Asuna",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Alice",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Kirito",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Colossal",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Eren",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Levi",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Jogo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Gojo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Nanami",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Beerus",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Broly",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Gogeta",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Hashirama",
+        [5] = -150000000000000000000000000000000000000000
+    }
+} 
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Minato",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Shisui",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Douma",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Yorichii",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Rengoku",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+
+end)
+
+end
+
+end
+
+end)
+
+end) Sector1:AddToggle("Auto Give Best Pet And Inf yen",false,function(t) _G.AutoGiveBestPetAndInfyen = t end) spawn(function() pcall(function() while wait() do if _G.AutoGiveBestPetAndInfyen then pcall(function()  local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Luffy",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args)) end) end end end)  end) Sector1:AddToggle("Auto Give Secret Pet And Inf yen",false,function(t) _G.AutoGiveSecretPetAndInfyen = t end) spawn(function() pcall(function() while wait() do if _G.AutoGiveSecretPetAndInfyen then pcall(function() local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Yorichii",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Minato",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Broly",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Gojo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Eren",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Alice",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+end) end end end)  end) Sector1:AddToggle("Auto Give Raid Pet And Inf Yen",false,function(t) _G.AutoGiveRaidPetAndInfyen = t end) spawn(function() pcall(function() while wait() do if _G.AutoGiveRaidPetAndInfyen then pcall(function() local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Douma",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Hashirama",
+        [5] = -150000000000000000000000000000000000000000
+    }
+} 
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Beerus",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Jogo",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Colossal",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Asuna",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Mihawk",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+ end) end end end)  end) Sector1:AddToggle("Auto Give Mythical Pet And Inf yen",false,function(t) _G.AutoGiveMythicalPetAndInfyen = t end) spawn(function() pcall(function() while wait() do if _G.AutoGiveMythicalPetAndInfyen then pcall(function() local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Rengoku",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Shisui",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Gogeta",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Nanami",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Levi",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Kirito",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "PetStatus",
+        [2] = "Shiny",
+        [3] = {
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true,
+            ["52cccd29-cbcf-4296-83a8-f932a66ccbb1"] = true
+        },
+        [4] = "Shanks",
+        [5] = -150000000000000000000000000000000000000000
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+end) end end end)  end) Sector1:AddLabel("if not work press 4 times unlock") Sector1:AddButton("Unlock Magic Academy And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Demon Slayer"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,2,workspace.Client.Maps["Demon Slayer"].Interact.Portal.Interact}) end)     Sector1:AddButton("Unlock Dragon Planet And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Jujutsu Kaisen"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,3,workspace.Client.Maps["Jujutsu Kaisen"].Interact.Portal.Interact}) end) Sector1:AddButton("Unlock Shinobi Village And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Dragon Ball"})  game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,4,workspace.Client.Maps["Dragon Ball"].Interact.Portal.Interact}) end) Sector1:AddButton("Unlock Virtual Town And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Naruto"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,5,workspace.Client.Maps.Naruto.Interact.Portal.Interact}) end)  Sector1:AddButton("Unlock Wall Sentinels And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Sword Art Online"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,6,workspace.Client.Maps["Sword Art Online"].Interact.Portal.Interact}) end)  Sector1:AddButton("Unlock Sea Of Dreams And Inf Yen",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Attack On Titan"}) game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyZone",-150000000000000000000000000000000000000000,7,workspace.Client.Maps["Attack On Titan"].Interact.Portal.Interact}) end)   local Sector2 = Tab:CreateSector("Auto Eggs","Right") Sector2:AddToggle("Auto Egg Demon Village",false,function(t) _G.AutoEggDemonSlayer = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggDemonSlayer then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -2225.93115, 123.485298, 4233.31787, 0.220223606, -0, -0.975449443, 0, 1, -0, 0.975449443, 0, 0.220223606)}):Play()  game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Demon Slayer"]["Basic Tier"],"E"}) end) end end end) end)  Sector2:AddToggle("Auto Egg Magic Academy",false,function(t) _G.AutoEggMagicAcademy = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggMagicAcademy then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -1688.60779, 200.960571, 1148.62488, -0.656063199, 0, -0.754706502, 0, 1, 0, 0.754706502, 0, -0.656063199)}):Play() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Jujutsu Kaisen"]["Basic Tier"],"E"}) end) end end end) end) Sector2:AddToggle("Auto Egg Dragon Planet",false,function(t) _G.AutoEggDragonPlanet= t end) spawn(function() pcall(function() while wait() do if _G.AutoEggDragonPlanet then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -1492.75879, 110.332748, -1075.33105, 0.656062782, -0, -0.754706323, 0, 1, -0, 0.754706323, 0, 0.656062782)}):Play() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Dragon Ball"]["Basic Tier"],"E"}) end) end end end) end) Sector2:AddToggle("Auto Egg Shinobi Village",false,function(t) _G.AutoEggShinobiVillage = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggShinobiVillage then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -798.671631, 176.005447, -3586.72607, -0.573599219, 0, -0.81913656, 0, 1, 0, 0.81913656, 0, -0.573599219)}):Play() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Naruto"]["Basic Tier"],"E"}) end) end end end) end) Sector2:AddToggle("Auto Egg Virtual Town",false,function(t) _G.AutoEggVirtualTown = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggVirtualTown then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -890.562073, 192.248032, -5883.65234, 0.258864343, -0, -0.965913713, 0, 1, -0, 0.965913713, 0, 0.258864343)}):Play() game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Sword Art Online"]["Basic Tier"],"E"}) end) end end end) end) Sector2:AddToggle("Auto Egg Wall Sentinels",false,function(t) _G.AutoEggWallSentinels = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggWallSentinels then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new( -740.571045, 155.302475, -8197.01562, -0.681973696, 0, -0.731376648, 0, 1, 0, 0.731376648, 0, -0.681973696)}):Play()  game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"BuyTier",workspace.Client["Summon Stars"]["Attack On Titan"]["Basic Tier"],"E"}) end) end end end) end)  Sector2:AddToggle("Auto Egg Sea Of Dreams",false,function(t) _G.AutoEggSeaOfDreams = t end) spawn(function() pcall(function() while wait() do if _G.AutoEggSeaOfDreams then pcall(function() game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),{CFrame = CFrame.new(   -22.8647461, 140.331146, -10557.6641, 1, 0, 0, 0, 1, 0, 0, 0, 1 )}):Play() end) end end end) end)    local Sector3 = Tab:CreateSector("Terleports","left") Sector3:AddLabel("Terleport Here")  Sector3:AddButton("Terleport to Demon Village",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Demon Slayer"}) end)         Sector3:AddButton("Terleport to Magic Academy",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Jujutsu Kaisen"}) end)     Sector3:AddButton("Terleport to Dragon Planet",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Dragon Ball"})  end)             Sector3:AddButton("Terleport to Shinobi Village",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Naruto"}) end)  Sector3:AddButton("Terleport to  Virtual Town",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Sword Art Online"})  end)             Sector3:AddButton("Terleport to Wall Sentinels",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Attack On Titan"}) end)             Sector3:AddButton("Terleport to Sea Of Dreams",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","One Piece"}) end)        Sector3:AddButton("Terleport to Time Trial",function()  print("")game:GetService("ReplicatedStorage").Remotes.Server:FireServer({"ChangeZone","Trial Lobby"}) end)     
