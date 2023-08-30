@@ -8,6 +8,9 @@ end)
 if game.PlaceId == 10598963932 then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
+if game.PlaceId == 11851929143 then
+    print ("Cat Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 11448431235 then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
