@@ -8,9 +8,6 @@ end)
 if game.PlaceId == 10598963932 then
     print ("Cat Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
-elseif game.PlaceId == 11851929143 then
-    print ("Cat Pieces")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 11448431235 then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
@@ -28,6 +25,9 @@ elseif game.PlaceId == 12364861304 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
+elseif game.PlaceId == 11851929143 then
+    print ("Cat Pieces")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 else
 end
