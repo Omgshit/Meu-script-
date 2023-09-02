@@ -31,6 +31,6 @@ elseif game.PlaceId == 11851929143 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 13044802784 then
     print ("Eternal Tower Defense")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/blob/main/Eternal%20Tower%20Defense"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Eternal%20Tower%20Defense"))()
 else
 end
