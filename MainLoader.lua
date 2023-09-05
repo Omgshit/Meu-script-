@@ -35,8 +35,5 @@ elseif game.PlaceId == 13044802784 then
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()
-    elseif game.PlaceId == 13698105873 then
-    print ("Skibid Toilet Attack")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Skibid%20Toilet%20Attack"))()
 else
 end
