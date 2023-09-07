@@ -34,6 +34,9 @@ elseif game.PlaceId == 13044802784 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Eternal%20Tower%20Defense"))()
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
+elseif game.PlaceId == 12453994319 then
+    print ("Ro Fruit 2")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))()
 else
 end
