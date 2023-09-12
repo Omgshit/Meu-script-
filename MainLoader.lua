@@ -35,7 +35,10 @@ elseif game.PlaceId == 13772394625 then
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
-elseif game.PlaceId == 12453994319 then
+    elseif game.PlaceId == 14732610803 then
+    print ("Pro Serve")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20Ball"))()
+    elseif game.PlaceId == 12453994319 then
     print ("Ro Fruit 2")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))()
 else
