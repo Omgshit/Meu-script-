@@ -31,13 +31,13 @@ elseif game.PlaceId == 11851929143 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20Ball"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
     elseif game.PlaceId == 14732610803 then
-    print ("Pro Serve")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20Ball"))()
+    print ("Pro Server")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
     elseif game.PlaceId == 12453994319 then
     print ("Ro Fruit 2")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))()
