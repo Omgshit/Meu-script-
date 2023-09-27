@@ -47,5 +47,8 @@ elseif game.PlaceId == 13864667823 then
 elseif game.PlaceId == 13864661000 then
     print ("Lobby")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Lobby"))()
+elseif game.PlaceId == 12871870953 then
+    print ("Dungeon")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 else
 end
