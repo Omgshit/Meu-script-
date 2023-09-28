@@ -56,5 +56,8 @@ elseif game.PlaceId == 13876973670 then
 elseif game.PlaceId == 12616541908 then
     print ("King Of Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20sea"))()
-else 
+elseif game.PlaceId == 14819655636 then
+    print ("Cross Sea")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cross%20piece"))()
+else
 end
