@@ -65,8 +65,11 @@ elseif game.PlaceId == 14154152705 then
 elseif game.PlaceId == 14500026273 then
     print ("King Of Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20sea"))()
- elseif game.PlaceId == 9790558424 then
-    print ("Master Pirate")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Master%20Pirate"))()
+elseif game.PlaceId == 8069117419 then
+    print ("Demon Soul")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Demon%20Soul"))()
+elseif game.PlaceId == 13226518892 then
+    print ("King Of battleground")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20battleground"))()
 else
 end
