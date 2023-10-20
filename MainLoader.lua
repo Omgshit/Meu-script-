@@ -71,5 +71,14 @@ elseif game.PlaceId == 8069117419 then
 elseif game.PlaceId == 13226518892 then
     print ("King Of battleground")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20battleground"))()
+elseif game.PlaceId == 2753915549 then
+    print ("Sea 1")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
+ elseif game.PlaceId == 4442272183 then
+    print ("Sea 2")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
+elseif game.PlaceId == 7449423635 then
+    print ("Sea 3")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
 else
 end
