@@ -11,7 +11,10 @@ if game.PlaceId == 10598963932 then
 elseif game.PlaceId == 11448431235 then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
-    elseif game.PlaceId == 9144187696 then
+elseif game.PlaceId == 9144187696 then
+    print ("A Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
+elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
 elseif game.PlaceId == 12153639244 then
@@ -35,10 +38,10 @@ elseif game.PlaceId == 13772394625 then
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
-    elseif game.PlaceId == 14732610803 then
+elseif game.PlaceId == 14732610803 then
     print ("Pro Server")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    elseif game.PlaceId == 12453994319 then
+elseif game.PlaceId == 12453994319 then
     print ("Ro Fruit 2")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))()
 elseif game.PlaceId == 13864667823 then
@@ -74,7 +77,7 @@ elseif game.PlaceId == 13226518892 then
 elseif game.PlaceId == 2753915549 then
     print ("Sea 1")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
- elseif game.PlaceId == 4442272183 then
+elseif game.PlaceId == 4442272183 then
     print ("Sea 2")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
 elseif game.PlaceId == 7449423635 then
