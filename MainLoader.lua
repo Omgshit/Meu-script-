@@ -95,6 +95,9 @@ elseif game.PlaceId == 13155198714 then
 elseif game.PlaceId == 14862674911 then
     print ("One Fruit Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/One%20Fruit%20Simulator"))()
+elseif game.PlaceId == 14561998168 then
+    print ("Heaven Stand")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Heaven%20Stand"))()
 elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
