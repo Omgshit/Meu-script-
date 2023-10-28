@@ -63,7 +63,7 @@ elseif game.PlaceId == 14819655636 then
     print ("Cross Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cross%20piece"))()
 elseif game.PlaceId == 14154152705 then
-    print ("Cross Sea")
+    print ("Pirate battleground")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Pirate%20Battleground"))()
 elseif game.PlaceId == 14500026273 then
     print ("King Of Sea")
@@ -83,5 +83,8 @@ elseif game.PlaceId == 4442272183 then
 elseif game.PlaceId == 7449423635 then
     print ("Sea 3")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blox%20fruit"))()
+elseif game.PlaceId == 6938803436 or game.PlaceId == 6990129309 or game.PlaceId == 6990133340 or game.PlaceId == 6990131029 or game.PlaceId == 7338881230 or game.PlaceId == 7274690025 then
+    print ("Anime Dimensions")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
 end
