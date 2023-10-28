@@ -89,5 +89,8 @@ elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7
 elseif game.PlaceId == 8534845015  then
     print ("Sakura Stand")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Stand"))()
+elseif game.PlaceId == 11445923563 or game.PlaceId == 13155198714 or game.PlaceId == 14862674911 then
+    print ("One Fruit Simulator")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/One%20Fruit%20Simulator"))()
 else
 end
