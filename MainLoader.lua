@@ -101,6 +101,9 @@ elseif game.PlaceId == 14561998168 then
 elseif game.PlaceId == 3475397644 then
     print ("Dragon Adventure")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Dragon%20Adventure"))()
+elseif game.PlaceId == 14762790937 then
+    print ("Anime Waves Simulator")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Waves%20Simulator"))()
 elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
