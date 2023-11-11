@@ -32,9 +32,6 @@ elseif game.PlaceId == 12241341621 then
 elseif game.PlaceId == 11851929143 then
     print ("Cat Pieces")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
-elseif game.PlaceId == 13772394625 then
-    print ("Blade Ball")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
 elseif game.PlaceId == 14315283529 then
     print ("Anime Enemies Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
@@ -104,9 +101,14 @@ elseif game.PlaceId == 3475397644 then
 elseif game.PlaceId == 14762790937 then
     print ("Anime Waves Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Waves%20Simulator"))()
+    elseif game.PlaceId == 14816008018 then
+    print ("Samurai Simulator")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Samurai%20Simulator"))()
+elseif game.PlaceId == 13772394625 or 4777817887 or 15131065025 or 15144787112 or 14915220621 or 15234596844 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
 elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
 end
-
