@@ -101,16 +101,61 @@ elseif game.PlaceId == 14762790937 then
 elseif game.PlaceId == 14816008018 then
     print ("Samurai Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Samurai%20Simulator"))()
-
-elseif game.PlaceId == 13772394625 or 14732610803 or 4777817887 or 15131065025 or 15144787112 or 14915220621 or 15234596844 then
+elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-
-elseif game.PlaceId == 12398966422 or 12696293710 or 10926417608 or 10873387885 or 12931609417 or 6839171747 or 6516141723 then
+    
+    elseif game.PlaceId == 14732610803 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    
+    elseif game.PlaceId == 4777817887 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    
+    elseif game.PlaceId == 15131065025 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    
+    elseif game.PlaceId == 15144787112 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    
+    elseif game.PlaceId == 14915220621 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    
+    elseif game.PlaceId == 15234596844 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+    elseif game.PlaceId == 12398966422 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-
-elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
+    
+    elseif game.PlaceId == 12696293710 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+    
+    elseif game.PlaceId == 10926417608 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+    
+    elseif game.PlaceId == 10873387885 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+    
+    elseif game.PlaceId == 12931609417 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+    
+    elseif game.PlaceId == 6839171747 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+    
+    elseif game.PlaceId == 6516141723 then
+    print ("Doors")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
+ elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
