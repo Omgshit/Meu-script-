@@ -104,54 +104,42 @@ elseif game.PlaceId == 14816008018 then
 elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 14732610803 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 4777817887 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 15131065025 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 15144787112 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 14915220621 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
-    
     elseif game.PlaceId == 15234596844 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
     elseif game.PlaceId == 12398966422 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 12696293710 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 10926417608 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 10873387885 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 12931609417 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 6839171747 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-    
     elseif game.PlaceId == 6516141723 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
