@@ -110,6 +110,9 @@ elseif game.PlaceId == 13260919372 then
 elseif game.PlaceId == 15100591459 then
     print ("Clash Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Clash%20Ball"))()
+elseif game.PlaceId == 13517464174 then
+    print ("Animeverse")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Animeverse"))()
 elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
