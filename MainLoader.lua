@@ -104,6 +104,9 @@ elseif game.PlaceId == 14816008018 then
 elseif game.PlaceId == 14498760035 then
     print ("Block Digging Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Block%20Dugging%20Simulator"))()
+elseif game.PlaceId == 13260919372 then
+    print ("Anime Ultimate Simulator")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Ultimate%20Simulator"))()
 elseif game.PlaceId == 15100591459 then
     print ("Clash Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Clash%20Ball"))()
