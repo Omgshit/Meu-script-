@@ -52,7 +52,7 @@ elseif game.PlaceId == 13876973670 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Conqueror%20Legacy"))()
 elseif game.PlaceId == 12616541908 then
     print ("King Of Sea")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20sea"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6492555543911696.lua.txt"))()
 elseif game.PlaceId == 14819655636 then
     print ("Cross Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cross%20piece"))()
@@ -61,7 +61,7 @@ elseif game.PlaceId == 14154152705 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Pirate%20Battleground"))()
 elseif game.PlaceId == 14500026273 then
     print ("King Of Sea")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20sea"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6492555543911696.lua.txt"))()
 elseif game.PlaceId == 8069117419 then
     print ("Demon Soul")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Demon%20Soul"))()
