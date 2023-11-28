@@ -115,7 +115,7 @@ elseif game.PlaceId == 13517464174 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Animeverse"))()
 elseif game.PlaceId == 11756036029 then
     print ("Anime Spirit")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Spirit"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Spirits"))()
 elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
