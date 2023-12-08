@@ -107,9 +107,9 @@ elseif game.PlaceId == 14498760035 then
 elseif game.PlaceId == 13260919372 then
     print ("Anime Ultimate Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Ultimate%20Simulator"))()
-elseif game.PlaceId == 15100591459 then
-    print ("Clash Ball")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Clash%20Ball"))()
+elseif game.PlaceId == 15088771636 then
+    print ("Jood Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Jood%20Piece"))()
 elseif game.PlaceId == 13517464174 then
     print ("Animeverse")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Animeverse"))()
