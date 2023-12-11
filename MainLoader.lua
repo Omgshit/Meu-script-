@@ -80,6 +80,9 @@ elseif game.PlaceId == 7449423635 then
 elseif game.PlaceId == 8534845015  then
     print ("Sakura Stand")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Stand"))()
+elseif game.PlaceId == 15552367548 then
+    print ("Sakura Stand")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Stand"))()
 elseif game.PlaceId == 11445923563 then
     print ("One Fruit Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/One%20Fruit%20Simulator"))()
@@ -114,7 +117,7 @@ elseif game.PlaceId == 13517464174 then
     print ("Animeverse")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Animeverse"))()
 elseif game.PlaceId == 11756036029 then
-    print ("Anime Spirit")
+    print ("Anime Spirits")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Spirits"))()
 elseif game.PlaceId == 13667319624 then
     print ("Knockout Simulator")
