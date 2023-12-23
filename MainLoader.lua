@@ -158,6 +158,9 @@ elseif game.PlaceId == 15234596844 then
 elseif game.PlaceId == 15185247558 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+elseif game.PlaceId == 15552588346 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
 elseif game.PlaceId == 12398966422 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
