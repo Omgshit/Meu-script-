@@ -65,9 +65,6 @@ elseif game.PlaceId == 12871870953 then
 elseif game.PlaceId == 13876973670 then
     print ("Conqueror Legacy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Conqueror%20Legacy"))()
-elseif game.PlaceId == 14713543756 then
-    print ("Titan Wars")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Titan%20wars"))()
 elseif game.PlaceId == 1537690962 then
     print ("Bee Swarm")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Bee"))()
