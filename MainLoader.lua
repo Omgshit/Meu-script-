@@ -49,7 +49,10 @@ elseif game.PlaceId == 14315283529 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Enemies%20Simulator"))()  
 elseif game.PlaceId == 12453994319 then
     print ("Ro Fruit 2")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ro%20Fruit2"))() 
+elseif game.PlaceId == 15259246552 then
+    print ("Sukuna Battleground")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sukuna%20battleground"))()
 elseif game.PlaceId == 13864667823 then
     print ("Breaking in Story 2")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Breaking%20in%20Story%202"))()
