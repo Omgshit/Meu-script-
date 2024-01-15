@@ -59,6 +59,9 @@ elseif game.PlaceId == 13864667823 then
 elseif game.PlaceId == 13864661000 then
     print ("Lobby")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Lobby"))()
+elseif game.PlaceId == 155615604 then
+    print ("Prison Life")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Prison%20Life"))()
 elseif game.PlaceId == 12871870953 then
     print ("Dungeon")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
@@ -195,4 +198,5 @@ elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
+    game.Players.LocalPlayer:Kick("Game Not Support")
 end
