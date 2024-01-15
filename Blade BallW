@@ -1,1 +1,1 @@
-print("a")
+game.Players.LocalPlayer:Kick("Soon it back!")
