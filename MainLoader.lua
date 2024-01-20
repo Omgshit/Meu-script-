@@ -140,6 +140,9 @@ elseif game.PlaceId == 13517464174 then
 elseif game.PlaceId == 11756036029 then
     print ("Anime Spirits")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Spirits"))()
+elseif game.PlaceId == 16041086429 then
+    print ("Anime Spirits 2nd Sea")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Spirits"))()
 elseif game.PlaceId == 13667319624 then
     print ("Knockout Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Knockout%20Simulator"))()
