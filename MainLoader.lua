@@ -194,7 +194,7 @@ elseif game.PlaceId == 6839171747 then
 elseif game.PlaceId == 6516141723 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
-elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId == 9015014224 then
+elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId == 9015014224 or game.PlaceId == 6990129309 then
     print ("Slap Battles")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Slap%20Battles"))()
  elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 then
