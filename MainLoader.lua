@@ -74,6 +74,9 @@ elseif game.PlaceId == 1537690962 then
 elseif game.PlaceId == 12616541908 then
     print ("King Of Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6492555543911696.lua.txt"))()
+elseif game.PlaceId == 14115013144 then
+    print ("Grimoires Eras")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Grimoires%20Eras"))()
 elseif game.PlaceId == 14819655636 then
     print ("Cross Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cross%20piece"))()
