@@ -17,9 +17,9 @@ elseif game.PlaceId == 9144187696 then
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
-elseif game.PlaceId == 12153639244 then
-    print ("Anime Max Simulator")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Max%20Simulator"))()
+elseif game.PlaceId == 12588367314 then
+    print ("Robending Online")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Robending%20Online"))()
 elseif game.PlaceId == 12988931150 then
     print ("Merge Anims Legends Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
