@@ -89,6 +89,9 @@ elseif game.PlaceId == 14154152705 then
 elseif game.PlaceId == 14500026273 then
     print ("King Of Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6492555543911696.lua.txt"))()
+elseif game.PlaceId == 15049111150 then
+    print ("Second Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Second%20Piece"))()
 elseif game.PlaceId == 8069117419 then
     print ("Demon Soul")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Demon%20Soul"))()
