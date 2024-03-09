@@ -164,6 +164,9 @@ elseif game.PlaceId == 16041086429 then
 elseif game.PlaceId == 13667319624 then
     print ("Knockout Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Knockout%20Simulator"))()
+elseif game.PlaceId == 12135640403 then
+    print ("Anime Dungeon Fighters")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dungeon%20Fighters"))()
 elseif game.PlaceId == 13772394625 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
@@ -191,6 +194,9 @@ elseif game.PlaceId == 15185247558 then
 elseif game.PlaceId == 15552588346 then
     print ("Blade Ball")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
+elseif game.PlaceId == 15517169103 then
+    print ("Blade Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Blade%20BallW"))()
 elseif game.PlaceId == 12398966422 then
     print ("Doors")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DoorsNotByme"))()
@@ -215,8 +221,19 @@ elseif game.PlaceId == 6516141723 then
 elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId == 9015014224 then
     print ("Slap Battles")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Slap%20Battles"))()
+elseif game.PlaceId == 16582687738 or game.PlaceId == 14819490378 or game.PlaecId == 15695929915 then
+    print ("Swordburst3")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Swordburst3"))()
  elseif game.PlaceId == 6938803436 or 6990129309 or 6990133340 or 6990131029 or 7338881230 or 7274690025 or 6990129309 then
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
 end
+
+--anti afk kick
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
