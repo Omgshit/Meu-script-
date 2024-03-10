@@ -167,6 +167,12 @@ elseif game.PlaceId == 13667319624 then
 elseif game.PlaceId == 12135640403 then
     print ("Anime Dungeon Fighters")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dungeon%20Fighters"))()
+elseif game.PlaceId == 15502802094 then 
+    print ("Anime Dungeon Fighters")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dungeon%20Fighters"))()
+elseif game.PlaceId == 15742087191 then 
+    print ("Anime Dungeon Fighters")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dungeon%20Fighters"))()
 elseif game.PlaceId == 16582687738 then
     print ("Swordburst3")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Swordburst3"))()
