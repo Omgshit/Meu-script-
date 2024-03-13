@@ -164,6 +164,21 @@ elseif game.PlaceId == 16041086429 then
 elseif game.PlaceId == 13667319624 then
     print ("Knockout Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Knockout%20Simulator"))()
+elseif game.PlaceId == 5210095481 then
+    print ("Omini X")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/OminiX"))()
+elseif game.PlaceId == 16129091908 then
+    print ("Omini X")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/OminiX"))()
+elseif game.PlaceId == 16091658541 then
+    print ("Omini X")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/OminiX"))()
+elseif game.PlaceId == 16365412402 then
+    print ("Omini X")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/OminiX"))()
+elseif game.PlaceId == 16029997375 then
+    print ("Omini X")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/OminiX"))()
 elseif game.PlaceId == 12135640403 then
     print ("Anime Dungeon Fighters")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dungeon%20Fighters"))()
