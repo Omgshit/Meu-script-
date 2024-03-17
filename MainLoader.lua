@@ -32,12 +32,12 @@ elseif game.PlaceId == 16104283295 then
 elseif game.PlaceId == 12988931150 then
     print ("Merge Anims Legends Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
-elseif game.PlaceId == 12364861304 then
+elseif game.PlaceId == 15049111150 then
     print ("Second Sea")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Second%20Piece"))()
 elseif game.PlaceId == 16644455867 then
     print ("Second Sea")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Second%20Piece"))()
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
