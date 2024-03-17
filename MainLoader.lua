@@ -35,6 +35,9 @@ elseif game.PlaceId == 12988931150 then
 elseif game.PlaceId == 12364861304 then
     print ("Second Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
+elseif game.PlaceId == 16644455867 then
+    print ("Second Sea")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
