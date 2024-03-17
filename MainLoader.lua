@@ -41,6 +41,9 @@ elseif game.PlaceId == 16644455867 then
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
+elseif game.PlaceId == 15532962292 then
+    print ("Sol's RNG")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sol's%20rng"))()
 elseif game.PlaceId == 13283345197 then
     print ("Cat Pieces")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Cat%20piece"))()
