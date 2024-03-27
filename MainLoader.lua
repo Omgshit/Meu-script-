@@ -50,6 +50,9 @@ elseif game.PlaceId == 16644455867 then
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
+elseif game.PlaceId == 16723079713 then
+    print ("Defense Mode")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
 elseif game.PlaceId == 15532962292 then
     print ("Sol's RNG")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sol's%20rng"))()
