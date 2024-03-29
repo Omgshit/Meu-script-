@@ -41,6 +41,9 @@ elseif game.PlaceId == 16104283295 then
 elseif game.PlaceId == 12988931150 then
     print ("Merge Anims Legends Simulator")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Merge%20Anime%20Legends%20Simulator"))()
+elseif game.PlaceId == 16349323749 then
+    print ("Blade of Chance")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/BladeOfChance"))()
 elseif game.PlaceId == 15049111150 then
     print ("Second Sea")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Second%20Piece"))()
