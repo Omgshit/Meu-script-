@@ -26,6 +26,12 @@ elseif game.PlaceId == 7979341445 then
 elseif game.PlaceId == 12317373094 then
     print ("Champions TD")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Champion%20TD"))()
+elseif game.PlaceId == 14426444782 then
+    print ("Cursed Sea")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/CursedSeaFarmRaid"))()
+elseif game.PlaceId == 16631605899 then
+    print ("Cursed Raid Only")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/CursedSeaFarmRaid"))()
 elseif game.PlaceId == 16408177303 then
     print ("Anime Roulette")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeRoulette"))()
