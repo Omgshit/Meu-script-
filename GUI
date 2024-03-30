@@ -3481,7 +3481,3 @@ if not game:GetService("CoreGui"):FindFirstChild("Credit") then
     Notification(1, "OMG Hub", "Executed!", 10);
 end
 return library;
-
-if game.PlaceId == 14426444782 then
-game.Players.LocalPlayer:Kick("Removed")
-end
