@@ -178,6 +178,7 @@ end
 
 -- Instances:
 
+while wait(1) do
 local Mythic = Instance.new("ScreenGui")
 local MythicFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -259,7 +260,7 @@ local function XGRH_fake_script() -- MythicFrame.Main
 	end)
 end
 coroutine.wrap(XGRH_fake_script)()
-
+end
 local function CreateTween(Configs)
 	local Instance = Configs[1] or Configs.Instance
 	local Prop = Configs[2] or Configs.Prop
