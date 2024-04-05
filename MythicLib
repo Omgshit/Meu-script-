@@ -1960,7 +1960,6 @@ return MythicLib
 
 -- Instances:
 
-while wait(5) do
 local Mythic = Instance.new("ScreenGui")
 local MythicFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -2042,4 +2041,3 @@ local function XGRH_fake_script() -- MythicFrame.Main
 	end)
 end
 coroutine.wrap(XGRH_fake_script)()
-end
