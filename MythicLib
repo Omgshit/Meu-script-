@@ -173,94 +173,7 @@ local function ConnectSave(Instance, func)
 	end)
 end
 
--- Gui to Lua
--- Version: 3.6
 
--- Instances:
-
-while wait(1) do
-local Mythic = Instance.new("ScreenGui")
-local MythicFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local UIStroke = Instance.new("UIStroke")
-local MythicButton = Instance.new("ImageButton")
-local UICorner_2 = Instance.new("UICorner")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-
--- Properties:
-
-Mythic.Name = "Mythic"
-Mythic.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Mythic.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-MythicFrame.Name = "MythicFrame"
-MythicFrame.Parent = Mythic
-MythicFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-MythicFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-MythicFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicFrame.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-MythicFrame.Draggable = true
-MythicFrame.Size = UDim2.new(0, 50, 0, 50)
-
-UICorner.CornerRadius = UDim.new(0, 16)
-
-UIStroke.Thickness = 1.25
-UIStroke.Parent = MythicFrame
-
-MythicButton.Name = "MythicButton"
-MythicButton.Parent = MythicFrame
-MythicButton.AnchorPoint = Vector2.new(0.5, 0.5)
-MythicButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicButton.BackgroundTransparency = 1.000
-MythicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicButton.BorderSizePixel = 0
-MythicButton.Position = UDim2.new(0.5, 0, 0.5, 0)
-MythicButton.Size = UDim2.new(1, 0, 1, 0)
-MythicButton.Image = ""
-
-UICorner_2.CornerRadius = UDim.new(0, 16)
-UICorner_2.Parent = MythicButton
-
-UIAspectRatioConstraint.Parent = MythicButton
-UIAspectRatioConstraint.AspectRatio = 1.009
-
-UIAspectRatioConstraint_2.Parent = MythicFrame
-UIAspectRatioConstraint_2.AspectRatio = 1.009
-
--- Scripts:
-
-local function XGRH_fake_script() -- MythicFrame.Main 
-	local script = Instance.new('LocalScript', MythicFrame)
-
-	local CoreGui = game:GetService("CoreGui")
-	local MythicFrame = script.Parent
-	local MythicButton = MythicFrame.MythicButton
-	local MythicScreenGui = MythicFrame.Parent
-	
-	local NormalSize = MythicFrame.Size
-	local NewSize = UDim2.new(
-		NormalSize.X.Scale * 0.9,
-		NormalSize.X.Offset,
-		NormalSize.Y.Scale * 0.9,
-		NormalSize.Y.Offset
-	)
-	
-	MythicButton.Activated:Connect(function()
-		MythicFrame:TweenSize(NewSize, Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 0.1, false)
-		CoreGui:WaitForChild("MythicLib").Enabled = not CoreGui:WaitForChild("MythicLib").Enabled
-		task.wait(0.15)
-		MythicFrame:TweenSize(NormalSize, Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 0.1, false)
-	end)
-	
-	CoreGui.ChildRemoved:Connect(function(Child)
-		if Child.Name == "MythicLib" then
-			MythicScreenGui:Destroy()
-		end
-	end)
-end
-coroutine.wrap(XGRH_fake_script)()
-end
 local function CreateTween(Configs)
 	local Instance = Configs[1] or Configs.Instance
 	local Prop = Configs[2] or Configs.Prop
@@ -2041,3 +1954,92 @@ function MythicLib:MakeWindow(Configs)
 end
 
 return MythicLib
+
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+while wait(5) do
+local Mythic = Instance.new("ScreenGui")
+local MythicFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local MythicButton = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+
+-- Properties:
+
+Mythic.Name = "Mythic"
+Mythic.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Mythic.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MythicFrame.Name = "MythicFrame"
+MythicFrame.Parent = Mythic
+MythicFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MythicFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MythicFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MythicFrame.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+MythicFrame.Draggable = true
+MythicFrame.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner.CornerRadius = UDim.new(0, 16)
+
+UIStroke.Thickness = 1.25
+UIStroke.Parent = MythicFrame
+
+MythicButton.Name = "MythicButton"
+MythicButton.Parent = MythicFrame
+MythicButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MythicButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MythicButton.BackgroundTransparency = 1.000
+MythicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MythicButton.BorderSizePixel = 0
+MythicButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MythicButton.Size = UDim2.new(1, 0, 1, 0)
+MythicButton.Image = ""
+
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = MythicButton
+
+UIAspectRatioConstraint.Parent = MythicButton
+UIAspectRatioConstraint.AspectRatio = 1.009
+
+UIAspectRatioConstraint_2.Parent = MythicFrame
+UIAspectRatioConstraint_2.AspectRatio = 1.009
+
+-- Scripts:
+
+local function XGRH_fake_script() -- MythicFrame.Main 
+	local script = Instance.new('LocalScript', MythicFrame)
+
+	local CoreGui = game:GetService("CoreGui")
+	local MythicFrame = script.Parent
+	local MythicButton = MythicFrame.MythicButton
+	local MythicScreenGui = MythicFrame.Parent
+	
+	local NormalSize = MythicFrame.Size
+	local NewSize = UDim2.new(
+		NormalSize.X.Scale * 0.9,
+		NormalSize.X.Offset,
+		NormalSize.Y.Scale * 0.9,
+		NormalSize.Y.Offset
+	)
+	
+	MythicButton.Activated:Connect(function()
+		MythicFrame:TweenSize(NewSize, Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 0.1, false)
+		CoreGui:WaitForChild("MythicLib").Enabled = not CoreGui:WaitForChild("MythicLib").Enabled
+		task.wait(0.15)
+		MythicFrame:TweenSize(NormalSize, Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 0.1, false)
+	end)
+	
+	CoreGui.ChildRemoved:Connect(function(Child)
+		if Child.Name == "MythicLib" then
+			MythicScreenGui:Destroy()
+		end
+	end)
+end
+coroutine.wrap(XGRH_fake_script)()
+end
