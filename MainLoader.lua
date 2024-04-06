@@ -35,6 +35,9 @@ elseif game.PlaceId == 16631605899 then
 elseif game.PlaceId == 16408177303 then
     print ("Anime Roulette")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeRoulette"))()
+elseif game.PlaceId == 16524008257 then
+    print ("Anime RNG")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/ANIMERNG2"))()
 elseif game.PlaceId == 15172019581 then
     print ("Robending Online")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Robending%20Online"))()
