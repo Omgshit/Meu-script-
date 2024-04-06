@@ -90,7 +90,7 @@ local MythicLib = {
 	Save = {
 		UISize = {460, 340},
 		TabSize = 160,
-		Theme = "Purple"
+		Theme = "Roxo"
 	},
 	Instances = {},
 	Elements = {},
@@ -717,7 +717,7 @@ function MythicLib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Hm...",
+			Title = "Close",
 			Text = "You Really Want Close Script?",
 			Options = {{"Confirm", function()
 				ScreenGui:Destroy()
@@ -1697,7 +1697,7 @@ function MythicLib:MakeWindow(Configs)
 			})
 
 			local function SaveSlider()
-				if Flag and typeof(Flag) == "string" then
+				if Flag and typeof(Flag) == "number" then
 					SaveFile(Flag, Default)
 				end
 			end
@@ -2001,4 +2001,3 @@ function MythicLib:MakeWindow(Configs)
 end
 
 return MythicLib
-
