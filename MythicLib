@@ -9,6 +9,80 @@ local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
 
 local MythicLib = {
+	Themes = {
+		["Dark +"] = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(65, 150, 255),
+			["Color Text"] = Color3.fromRGB(243, 243, 243),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Dark = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(47.5, 47.5, 47.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))}),
+			["Color Hub 2"] = Color3.fromRGB(45, 45, 45),
+			["Color Stroke"] = Color3.fromRGB(65, 65, 65),
+			["Color Theme"] = Color3.fromRGB(65, 150, 255),
+			["Color Text"] = Color3.fromRGB(245, 245, 245),
+			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
+		},
+		Clear = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230.5, 220, 210)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230.5, 220, 210))}),
+			["Color Hub 2"] = Color3.fromRGB(230, 230, 230),
+			["Color Stroke"] = Color3.fromRGB(140, 140, 140),
+			["Color Theme"] = Color3.fromRGB(150, 150, 150),
+			["Color Text"] = Color3.fromRGB(24, 24, 24),
+			["Color Dark Text"] = Color3.fromRGB(50, 50, 50)
+		},
+		Purple = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(150, 0, 255),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Red = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(255, 15, 15),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Yellow = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(255, 255, 15),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Green = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(15, 255, 55),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Pink = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(250, 160, 160),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Blue = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))}),
+			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+			["Color Theme"] = Color3.fromRGB(10, 225, 250),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		}
+	},
 	Info = {
 		Version = "1.0.1",
 		PlaceName = MarketplaceService:GetProductInfo(game.PlaceId).Name
@@ -16,7 +90,7 @@ local MythicLib = {
 	Save = {
 		UISize = {460, 340},
 		TabSize = 160,
-		Theme = "Roxo"
+		Theme = "Purple"
 	},
 	Instances = {},
 	Elements = {},
@@ -643,7 +717,7 @@ function MythicLib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Close",
+			Title = "Hm...",
 			Text = "You Really Want Close Script?",
 			Options = {{"Confirm", function()
 				ScreenGui:Destroy()
@@ -1623,7 +1697,7 @@ function MythicLib:MakeWindow(Configs)
 			})
 
 			local function SaveSlider()
-				if Flag and typeof(Flag) == "number" then
+				if Flag and typeof(Flag) == "string" then
 					SaveFile(Flag, Default)
 				end
 			end
