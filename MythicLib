@@ -90,10 +90,9 @@ local MythicLib = {
 	Save = {
 		UISize = {460, 340},
 		TabSize = 160,
-		Theme = "Roxo"
+		Theme = "Purple"
 	},
 	Instances = {},
-	Elements = {},
 	Options = {},
 	Flags = {},
 	Tabs = {},
@@ -322,15 +321,6 @@ local function SaveJson(FileName, save)
 end
 
 local Theme = MythicLib.Themes[MythicLib.Save.Theme]
-
-local function AddEle(Name, Func)
-	MythicLib.Elements[Name] = Func
-end
-
-local function Make(Ele, Instance, props, ...)
-	local Element = MythicLib.Elements[Ele](Instance, props, ...)
-	return Element
-end
 
 AddEle("Corner", function(parent, CornerRadius)
 	local New = SetProps(Create("UICorner", parent, {
