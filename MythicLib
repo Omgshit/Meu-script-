@@ -93,6 +93,7 @@ local MythicLib = {
 		Theme = "Purple"
 	},
 	Instances = {},
+	Elements = {},
 	Options = {},
 	Flags = {},
 	Tabs = {},
@@ -170,54 +171,6 @@ local function ConnectSave(Instance, func)
 		end
 		func()
 	end)
-end
-
-local ScreenGui1 = Instance.new("ScreenGui")
-
-local ImageButton1 = Instance.new("ImageButton")
-
-local UICorner = Instance.new("UICorner")
-
-
-
-ScreenGui1.Name = "ImageButton"
-
-ScreenGui1.Parent = game.CoreGui
-
-ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-
-
-ImageButton1.Parent = ScreenGui1
-
-ImageButton1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-
-ImageButton1.BorderSizePixel = 0
-
-ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-
-ImageButton1.Size = UDim2.new(0, 50, 0, 50)
-
-ImageButton1.Draggable = true
-
-ImageButton1.Image = ""
-
-local CoreGui = game:GetService("CoreGui")
-
-ImageButton1.MouseButton1Down:connect(function()
-		CoreGui.MythicLib.Enabled = not CoreGui.MythicLib.Enabled
-end)
-
-UICorner.Parent = ImageButton1
-
-
-
-do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
-
-    _G.Color = Color3.fromRGB(230, 5, 12)
-
-   end 
-
 end
 
 local function CreateTween(Configs)
@@ -310,19 +263,71 @@ local function LoadSettings(FileName)
 		end
 	end
 end
-LoadSettings("Mythic/Lib.lua")
+LoadSettings("MythicLib.lua")
 
 local function SaveJson(FileName, save)
-	if makefolder and writefile then
+	if writefile then
 		local json = HttpService:JSONEncode(save)
-		makefolder("/Mythic")
 		writefile(FileName, json)
 	end
 end
 
 local Theme = MythicLib.Themes[MythicLib.Save.Theme]
 
+local function AddEle(Name, Func)
+	MythicLib.Elements[Name] = Func
+end
 
+local function Make(Ele, Instance, props, ...)
+	local Element = MythicLib.Elements[Ele](Instance, props, ...)
+	return Element
+end
+
+AddEle("Corner", function(parent, CornerRadius)
+	local New = SetProps(Create("UICorner", parent, {
+		CornerRadius = CornerRadius or UDim.new(0, 7)
+	}), props)
+	return New
+end)
+
+AddEle("Stroke", function(parent, props, ...)
+	local args = {...}
+	local New = InsertTheme(SetProps(Create("UIStroke", parent, {
+		Color = args[1] or Theme["Color Stroke"],
+		Thickness = args[2] or 1,
+		ApplyStrokeMode = "Border"
+	}), props), "Stroke")
+	return New
+end)
+
+AddEle("Button", function(parent, props, ...)
+	local args = {...}
+	local New = InsertTheme(SetProps(Create("TextButton", parent, {
+		Text = "",
+		Size = UDim2.fromScale(1, 1),
+		BackgroundColor3 = Theme["Color Hub 2"],
+		AutoButtonColor = false
+	}), props), "Frame")
+
+	New.MouseEnter:Connect(function()
+		New.BackgroundTransparency = 0.4
+	end)
+	New.MouseLeave:Connect(function()
+		New.BackgroundTransparency = 0
+	end)
+	if args[1] then
+		New.Activated:Connect(args[1])
+	end
+	return New
+end)
+
+AddEle("Gradient", function(parent, props, ...)
+	local args = {...}
+	local New = InsertTheme(SetProps(Create("UIGradient", parent, {
+		Color = Theme["Color Hub 1"]
+	}), props), "Gradient")
+	return New
+end)
 
 local function ButtonFrame(Instance, Title, Description, HolderSize)
 	local TitleL = InsertTheme(Create("TextLabel", {
@@ -444,7 +449,7 @@ function MythicLib:SetTheme(NewTheme)
 	end
 
 	MythicLib.Save.Theme = NewTheme
-	SaveJson("Mythic/Lib.lua", MythicLib.Save)
+	SaveJson("MythicLib.lua", MythicLib.Save)
 	Theme = MythicLib.Themes[NewTheme]
 
 	table.foreach(MythicLib.Instances, function(_, Val)
@@ -478,9 +483,9 @@ function MythicLib:MakeWindow(Configs)
 	local SaveRejoin = Configs[4] or Configs.SaveRejoin or false
 	local Flags = MythicLib.Flags
 
-	--[[if SaveCfg and type(SaveCfg) == "string" then
+	if SaveCfg and type(SaveCfg) == "string" then
 		SaveCfg = string.gsub(SaveCfg, "/", "|")
-	end]]
+	end
 
 	local LastTick = tick()
 	local function SaveFile(Name, Value)
@@ -490,7 +495,6 @@ function MythicLib:MakeWindow(Configs)
 
 				local encode = HttpService:JSONEncode(Flags)
 
-				makefolder("/Mythic")
 				pcall(writefile, SaveCfg, encode)
 			end
 		end
@@ -630,13 +634,13 @@ function MythicLib:MakeWindow(Configs)
 	ConnectSave(ControlSize1, function()
 		if not Minimized then
 			MythicLib.Save.UISize = {MainFrame.Size.X.Offset, MainFrame.Size.Y.Offset}
-			SaveJson("Mythic/Lib.lua", MythicLib.Save)
+			SaveJson("MythicLib.lua", MythicLib.Save)
 		end
 	end)
 
 	ConnectSave(ControlSize2, function()
 		MythicLib.Save.TabSize = MainScroll.Size.X.Offset
-		SaveJson("Mythic/Lib.lua", MythicLib.Save)
+		SaveJson("MythicLib.lua", MythicLib.Save)
 	end)
 
 	local ButtonsFolder = Create("Folder", TopBar, {
@@ -1747,17 +1751,17 @@ function MythicLib:MakeWindow(Configs)
 			local TDefault = Configs[2] or Configs.Default or ""
 			local TPlaceholderText = Configs.PlaceholderText or "Input"
 			local TClearText = Configs[3] or Configs.ClearText or false
-			local Callback = Configs[4] or Configs.Callback or function()
+			local Callback = Configs[2] or Configs.Callback or function()
 			end
-			local Flag = Configs[5] or Configs.Flag or false
+			local Flag = Configs[4] or Configs.Flag or false
 			local MultCallback = {}
-
-			if type(TDefault) ~= "string" or TDefault:gsub(" ", ""):len() < 1 then
-				TDefault = false
-			end
 
 			if Flag and type(Flag) == "string" and assert(Flags, Flag) then
 				TDefault = Flags[Flag]
+			end
+
+			if type(TDefault) ~= "string" or TDefault:gsub(" ", ""):len() < 1 then
+				TDefault = false
 			end
 
 			local Button, LabelFunc = ButtonFrame(Container, TName, TDesc, UDim2.new(1, -38))
