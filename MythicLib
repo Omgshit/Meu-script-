@@ -173,6 +173,54 @@ local function ConnectSave(Instance, func)
 	end)
 end
 
+local ScreenGui1 = Instance.new("ScreenGui")
+
+local ImageButton1 = Instance.new("ImageButton")
+
+local UICorner = Instance.new("UICorner")
+
+
+
+ScreenGui1.Name = "ImageButton"
+
+ScreenGui1.Parent = game.CoreGui
+
+ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+ImageButton1.Parent = ScreenGui1
+
+ImageButton1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+ImageButton1.BorderSizePixel = 0
+
+ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+
+ImageButton1.Size = UDim2.new(0, 50, 0, 50)
+
+ImageButton1.Draggable = true
+
+ImageButton1.Image = ""
+
+local CoreGui = game:GetService("CoreGui")
+
+ImageButton1.MouseButton1Down:connect(function()
+		CoreGui.MythicLib.Enabled = not CoreGui.MythicLib.Enabled
+end)
+
+UICorner.Parent = ImageButton1
+
+
+
+do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
+
+    _G.Color = Color3.fromRGB(230, 5, 12)
+
+   end 
+
+end
+
 local function CreateTween(Configs)
 	local Instance = Configs[1] or Configs.Instance
 	local Prop = Configs[2] or Configs.Prop
