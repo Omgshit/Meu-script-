@@ -32,6 +32,9 @@ elseif game.PlaceId == 14426444782 then
 elseif game.PlaceId == 16631605899 then
     print ("Cursed Raid Only")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/CursedSeaFarmRaid"))()
+elseif game.PlaceId == 12979690461 then
+    print ("Phantom Ball")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Phantom%20Ball"))()
 elseif game.PlaceId == 16408177303 then
     print ("Anime Roulette")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeRoulette"))()
