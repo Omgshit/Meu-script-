@@ -291,7 +291,7 @@ do
 						Size = UDim2.new(1, -46, 0, 16),
 						ZIndex = 5,
 						Font = Enum.Font.GothamBold,
-						Text = title .. ' <font color="rgb(80,80,80)">By HolyShz ' .. Version ..'</font>',
+						Text = title .. ' <font color="rgb(80,80,80)">By Omg ' .. Version ..'</font>',
 						RichText = true,
 						TextColor3 = themes.TextColor,
 						TextSize = 14,
