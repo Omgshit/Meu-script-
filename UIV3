@@ -291,7 +291,7 @@ do
 						Size = UDim2.new(1, -46, 0, 16),
 						ZIndex = 5,
 						Font = Enum.Font.GothamBold,
-						Text = title .. ' <font color="rgb(80,80,80)">By Omg ' .. Version ..'</font>',
+						Text = title .. ' <font color="rgb(80,80,80)">By HolyShz ' .. Version ..'</font>',
 						RichText = true,
 						TextColor3 = themes.TextColor,
 						TextSize = 14,
@@ -713,8 +713,8 @@ do
 		local this = {}
 		this.title = data.title or "nil text"
 
-		local button = utility:Create("ImageButton", {
-			Name = "Button",
+		local label = utility:Create("ImageButton", {
+			Name = "Label",
 			Parent = self.container,
 			BackgroundTransparency = 1,
 			BorderSizePixel = 0,
@@ -737,6 +737,9 @@ do
 				TextTransparency = 0.10000000149012
 			})
 		})
+
+        local module = {Instance = label, Options = this}
+		self.modules[#self.modules + 1] = module
 	end
 
 	function section:addButton(data)
@@ -2618,6 +2621,13 @@ do
 					TextTransparency = 0.10000000149012
 				})
 			})
+
+            table.foreach(options_Value,function(i,v)
+                if v == tostring(value) then
+                    table.remove(options_Value, i)
+                    utility:Tween(button.TextLabel, {TextColor3 = themes.TextColor}, 0.3)
+                end
+            end)
 
 			button.MouseButton1Click:Connect(function()
                 if table.find(options_Value,tostring(value)) == nil then
