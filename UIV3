@@ -148,7 +148,7 @@ do
 	function utility:KeyPressed() -- yield until next key is pressed
 		local key = input.InputBegan:Wait()
 
-		while key.UserInputType ~= Enum.UserInputType.Keyboard do
+		while key.UserInputType ~= Enum.UserInputType.Keyboard	 do
 			key = input.InputBegan:Wait()
 		end
 
@@ -227,7 +227,7 @@ do
 			utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
-				Position = UDim2.new(0.35, 0, 0.25, 0),
+				Position = UDim2.new(0.25, 0, 0.052435593, 0),
 				Size = UDim2.new(0, 511, 0, 428),
 				Image = "rbxassetid://4641149554",
 				ImageColor3 = themes.Background,
@@ -881,7 +881,7 @@ do
 		local frame = toggle.Button.Frame
 		local selectedPosition = this.toggled and "Out" or "In"
 
-		local function UpdateToggle(Value)
+		function UpdateToggle(Value)
 			local selectedPosition = Value and "Out" or "In"
 
 			utility:Tween(frame, {
@@ -1118,7 +1118,7 @@ do
 	
 			if options.key ~= Enum.KeyCode.Unknown then
 				self.binds[keybind].connection = utility:BindToKey(options.key, bind.callback, options.gameProcessedEvent)
-				text.Text = options.key.Name
+				text.Text = input:GetStringForKeyCode(options.key)
 			else
 				text.Text = "Unknown"
 			end
@@ -1923,7 +1923,7 @@ do
 		this.list = data.list or {}
         this.Basetitle = data.title or "nil title"
 		this.title = data.title or "nil title"
-		this.default = data.default or "None"
+		this.default = data.default
 		this.callback = data.callback or function() end
 
 		local dropdown = utility:Create("Frame", {
@@ -2090,7 +2090,7 @@ do
 			local frame = dropdown.List.Frame
 
 			if (not aOptions.noOpen) then
-				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 6) * 34 + 38)}, 0.3)
+				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 3) * 34 + 38)}, 0.3)
 				utility:Tween(dropdown.Search.Button, {Rotation = not aOptions.update and 180 or 0}, 0.3)
 			end
 
@@ -2148,15 +2148,11 @@ do
 
 		search.TextBox:GetPropertyChangedSignal("Text"):Connect(function()
 			if focused then
-				for i, button in pairs(dropdown.List.Frame:GetChildren()) do
-					if button:IsA("ImageButton") then
-						if string.find(button.TextLabel.Text:lower(),search.TextBox.Text:lower()) then
-							button.Visible = true
-						else
-							button.Visible = false
-						end
-					end
-				end	
+				local _list = utility:Sort(search.TextBox.Text, this.list)
+				local list = #_list ~= 0 and _list
+
+				this.title = nil
+				updateDropdown(module, {update = list})
 			end
 		end)
 
@@ -2366,7 +2362,7 @@ do
 			local frame = dropdown.List.Frame
 	
 			if (not aOptions.noOpen) then
-				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 6) * 34 + 38)}, 0.3)
+				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 3) * 34 + 38)}, 0.3)
 				utility:Tween(dropdown.Search.Button, {Rotation = not aOptions.update and 180 or 0}, 0.3)
 			end
 			
@@ -2438,15 +2434,11 @@ do
 
 		search.TextBox:GetPropertyChangedSignal("Text"):Connect(function()
 			if focused then
-				for i, button in pairs(dropdown.List.Frame:GetChildren()) do
-					if button:IsA("ImageButton") then
-						if string.find(button.TextLabel.Text:lower(),search.TextBox.Text:lower()) then
-							button.Visible = true
-						else
-							button.Visible = false
-						end
-					end
-				end		
+				local _list = utility:Sort(search.TextBox.Text, this.list)
+				local list = #_list ~= 0 and _list
+
+				this.title = nil
+				updateMulitDropdown(module, {update = list})
 			end
 		end)
 
@@ -2464,6 +2456,7 @@ do
 			this.default = Newdefault or this.default
 			this.Options_Mulit = Newdefault or this.default
 			dropdown.Search.TextLabel.Text = this.Basetitle .. " : " .. table.concat(this.default, ", ")
+
 			this.list = {}
 			for i,v in pairs(NewData) do
 				this.list[i] = tostring(v)
