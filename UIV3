@@ -2090,7 +2090,7 @@ do
 			local frame = dropdown.List.Frame
 
 			if (not aOptions.noOpen) then
-				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 6) * 34 + 38)}, 0.3)
+				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 3) * 34 + 38)}, 0.3)
 				utility:Tween(dropdown.Search.Button, {Rotation = not aOptions.update and 180 or 0}, 0.3)
 			end
 
@@ -2366,11 +2366,11 @@ do
 			local frame = dropdown.List.Frame
 	
 			if (not aOptions.noOpen) then
-				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 6) * 34 + 38)}, 0.3)
+				utility:Tween(dropdown, {Size = UDim2.new(1, 0, 0, (entries == 0 and 30) or math.clamp(entries, 0, 3) * 34 + 38)}, 0.3)
 				utility:Tween(dropdown.Search.Button, {Rotation = not aOptions.update and 180 or 0}, 0.3)
 			end
 			
-			if entries > 3 then
+			if entries > 6 then
 				for i, button in pairs(dropdown.List.Frame:GetChildren()) do
 					if button:IsA("ImageButton") then
 						button.Size = UDim2.new(1, -6, 0, 30)
