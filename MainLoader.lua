@@ -11,9 +11,9 @@ if game.PlaceId == 10598963932 then
 elseif game.PlaceId == 11448431235 then
     print ("Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()
-elseif game.PlaceId == 9144187696 then
-    print ("A Piece")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
+elseif game.PlaceId == 6897167394 then
+    print ("Demon Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Demon%20Piece"))()
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
