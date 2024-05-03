@@ -17,6 +17,9 @@ elseif game.PlaceId == 6897167394 then
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
+elseif game.PlaceId == 16474126979 then
+    print ("Anime Fantasy")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeFantasy"))()
 elseif game.PlaceId == 16526087282 then
     print ("Anime RNG")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20RNG"))()
