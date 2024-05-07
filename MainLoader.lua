@@ -77,6 +77,9 @@ elseif game.PlaceId == 16644455867 then
 elseif game.PlaceId == 12241341621 then
     print ("Second Map")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
+elseif game.PlaceId == 9447079542 or game.PlaceId == 9474703390 or game.PlaceId == 10202329527 then
+    print ("Project Mugetsu")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Project%20mugetsu"))()
 elseif game.PlaceId == 16723079713 then
     print ("Defense Mode")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Rock%20Fruit"))()  
