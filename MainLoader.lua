@@ -23,6 +23,12 @@ elseif game.PlaceId == 16474126979 then
 elseif game.PlaceId == 16526087282 then
     print ("Anime RNG")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20RNG"))()
+elseif game.PlaceId == 14206055326 then
+    print ("Rogue Ninja")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/RogueNinja"))()
+elseif game.PlaceId == 17298589168 then
+    print ("Aura Craft")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AuraCraft"))()
 elseif game.PlaceId == 7979341445 then
     print ("World Hardest Game")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/World%20Hardest%20Game"))()
