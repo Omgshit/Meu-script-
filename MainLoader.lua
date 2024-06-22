@@ -62,6 +62,9 @@ elseif game.PlaceId == 16631605899 then
 elseif game.PlaceId == 8501406566 then
     print ("Legacy Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Legacy%20piece"))()
+elseif game.PlaceId == 17889317592 then
+    print ("Jujutsu Legacy")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Jujutsu%20Legacy"))()
 elseif game.PlaceId == 15694107053 then
     print ("Jujutsu Legacy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Jujutsu%20Legacy"))()
