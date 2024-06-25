@@ -526,7 +526,7 @@ end
 
 function MythicLib:MakeWindow(Configs)
 	local WTitle = Configs[1] or Configs.Name or Configs.Title or "MythicLib"
-	local WMiniText = Configs[2] or Configs.SubTitle or "por: Equipe Mythic"
+	local WMiniText = Configs[2] or Configs.SubTitle or "By Omg"
 	local SaveCfg = Configs[3] or Configs.SaveFolder or false
 	local SaveRejoin = Configs[4] or Configs.SaveRejoin or false
 	local Flags = MythicLib.Flags
