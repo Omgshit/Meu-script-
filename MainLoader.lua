@@ -20,6 +20,9 @@ elseif game.PlaceId == 17167990958 then
 elseif game.PlaceId == 13157638696 or game.PlaceId == 17341158694 then
     print ("Hide e Sneak")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Hide%20e%20Sneak"))()
+elseif game.PlaceId == 14839995292 or game.PlaceId == 14982280667 then
+    print ("Clover Fucked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Clover%20Retribution"))()
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
