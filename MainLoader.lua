@@ -23,6 +23,9 @@ elseif game.PlaceId == 13157638696 or game.PlaceId == 17341158694 then
 elseif game.PlaceId == 14839995292 or game.PlaceId == 14982280667 then
     print ("Clover Fucked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Clover%20Retribution"))()
+elseif game.PlaceId == 10912405603 or game.PlaceId == 15076215032 then
+    print ("Clover Fucked")
+    game.Players.LocalPlayer:Kick("Use In Main Game Or Dungeon Please")
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
