@@ -172,10 +172,6 @@ local function ConnectSave(Instance, func)
 	end)
 end
 
-if game.PlaceId == 15014439457 then
-game.Players.LocalPlayer:Kick("You have been permanently banned from using OMG Hub! Join the Discord server for an appeal")
-emd
-
 local ScreenGui1 = Instance.new("ScreenGui")
 
 local ImageButton1 = Instance.new("ImageButton")
@@ -2004,3 +2000,6 @@ function MythicLib:MakeWindow(Configs)
 end
 
 return MythicLib
+if game.PlaceId == 15014439457 then
+game.Players.LocalPlayer:Kick("You have been permanently banned from using OMG Hub! Join the Discord server for an appeal")
+emd
