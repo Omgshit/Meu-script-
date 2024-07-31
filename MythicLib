@@ -1,6 +1,3 @@
-if game.PlaceId == 15014439457 then
-game.Players.LocalPlayer:Kick("You have been permanently banned from using OMG Hub! Join the Discord server for an appeal")
-emd
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
