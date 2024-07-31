@@ -26,6 +26,9 @@ elseif game.PlaceId == 10260193230 then
 elseif game.PlaceId == 13601434903 then
     print ("Sorcerer Battlegrounds")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sorcerer%20Battleground"))()
+elseif game.PlaceId == 18337464872 then
+    print ("Weak Legacy")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Weak%20Legacy%202"))()
 elseif game.PlaceId == 9704927237 or game.PlaceId == 12940506339 then
     print ("Anime Switch")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeSwitch"))()
