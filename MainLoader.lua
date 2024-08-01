@@ -20,7 +20,7 @@ elseif game.PlaceId == 17167990958 then
 elseif game.PlaceId == 15968393246 then
     print ("Anime Destiny")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeDestinySimulator"))()
-elseif game.PlaceId == 10260193230 then
+elseif game.PlaceId == 10260193230 or game.PlaceId == 11487720177 then
     print ("Meme Suck")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Meme%20Sea"))()
 elseif game.PlaceId == 13601434903 then
