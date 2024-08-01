@@ -85,6 +85,7 @@ local MythicLib = {
 	},
 	Info = {
 		Version = "1.0.1",
+		PlaceName = MarketplaceService:GetProductInfo(game.PlaceId).Name
 	},
 	Save = {
 		UISize = {460, 340},
