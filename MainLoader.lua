@@ -17,6 +17,9 @@ elseif game.PlaceId == 6897167394 then
 elseif game.PlaceId == 17167990958 then
     print ("New Rock Fruit")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/RockFruitNew"))()
+elseif game.PlaceId == 18271034370 then
+    print ("Sakura Piece")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Piece"))()
 elseif game.PlaceId == 15968393246 then
     print ("Anime Destiny")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeDestinySimulator"))()
