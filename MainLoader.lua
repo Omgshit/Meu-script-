@@ -217,13 +217,13 @@ elseif game.PlaceId == 13226518892 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20battleground"))()
 elseif game.PlaceId == 2753915549 then
     print ("Sea 1")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6697952315030400.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_9052197684486931.txt"))()
 elseif game.PlaceId == 4442272183 then
     print ("Sea 2")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6697952315030400.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_9052197684486931.txt"))()
 elseif game.PlaceId == 7449423635 then
     print ("Sea 3")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_6697952315030400.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_9052197684486931.txt"))()
 elseif game.PlaceId == 8534845015  then
     print ("Sakura Stand")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Stand"))()
