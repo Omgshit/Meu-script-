@@ -1,0 +1,19 @@
+local Player = game.Players.LocalPlayer
+local old;
+old = hookmetamethod(game, "__namecall", function(self, ...)
+  local Method = getnamecallmethod():lower()
+  if Method == "fireserver" then
+    local Remote = self.Name
+    if Remote == "Server_Skills" then
+      local v1, v2, v3, v4, v5 = ...
+      if v1 == Player.Character and v4 == "Release" and v5 then
+        local HitPos = Vector3.new(0, 20, 0) -- !AIMBOT-POSITION!
+        if rawget(v5, "Hit_Position") then v5.Hit_Position = HitPos end
+        if rawget(v5, "Mouse_Position") then v5.Mouse_Position = HitPos end
+        print("done")
+        return old(self, ...)
+      end
+    end
+  end
+  return old(self, ...)
+end)
