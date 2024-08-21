@@ -368,6 +368,7 @@ elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId
 else
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Adm.lua"))()
 --anti afk kick
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
