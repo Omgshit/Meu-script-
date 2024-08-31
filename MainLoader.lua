@@ -369,6 +369,13 @@ elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId
 else
 end
 
+if game.Players.LocalPlayer.Name == "Kibezinho00204" then
+game.Players.LocalPlayer:Kick("Me Dar Pika E eu Tiro Isso")
+end
+if game.Players.LocalPlayer.Name == "NARUTOJIN1232342423" then
+game.Players.LocalPlayer:Kick("Me Dar Pika E eu Tiro Isso")
+end
+
 --anti afk kick
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
