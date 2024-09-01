@@ -369,11 +369,14 @@ elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId
 else
 end
 
-if game.Players.LocalPlayer.Name == "Kibezinho00204" then
-game.Players.LocalPlayer:Kick("Me Dar Pika E eu Tiro Isso")
+if game.Players.LocalPlayer.Name == "xxgamexx_gamebr" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
 end
-if game.Players.LocalPlayer.Name == "NARUTOJIN1232342423" then
-game.Players.LocalPlayer:Kick("Me Dar Pika E eu Tiro Isso")
+if game.Players.LocalPlayer.Name == "Ana_bloxfruit" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
+end
+if game.Players.LocalPlayer.Name == "RENATA13523" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
 end
 
 --anti afk kick
