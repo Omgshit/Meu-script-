@@ -54,6 +54,9 @@ elseif game.PlaceId == 15744137588 then
 elseif game.PlaceId == 16981421605 then
     print ("Reborn As Swordman")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Reborn%20As%20Swordman"))()
+elseif game.PlaceId == 18688206652 then
+    print ("A man ijul piece e ruim")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ijul%20Piece"))()
 elseif game.PlaceId == 17556050821 then
     print ("Demon Slayer")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DemonBlade"))()
