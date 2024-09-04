@@ -381,6 +381,9 @@ end
 if game.Players.LocalPlayer.Name == "RENATA13523" then
 game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
 end
+if game.Players.LocalPlayer.Name == "mayconOM12" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
+end
 
 --anti afk kick
 local vu = game:GetService("VirtualUser")
