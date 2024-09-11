@@ -45,6 +45,9 @@ elseif game.PlaceId == 14839995292 or game.PlaceId == 14982280667 then
 elseif game.PlaceId == 10912405603 or game.PlaceId == 15076215032 then
     print ("Clover Fucked")
     game.Players.LocalPlayer:Kick("Use In Main Game Or Dungeon Please")
+elseif game.PlaceId == 16146832113 or game.PlaceId == 16277809958 then
+    print ("Suck My dick Anime Vanguards")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeVanguard"))()
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
