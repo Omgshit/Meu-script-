@@ -30,6 +30,9 @@ elseif game.PlaceId == 10260193230 or game.PlaceId == 11487720177 then
 elseif game.PlaceId == 13601434903 then
     print ("Sorcerer Battlegrounds")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sorcerer%20Battleground"))()
+elseif game.PlaceId == 94801184757522 then
+    print ("Piecs jujutusu duc")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/Jujutsu%20piece"))()
 elseif game.PlaceId == 18337464872 or game.PlaceId == 114252638377752 then
     print ("Weak Legacy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Weak%20Legacy%202"))()
