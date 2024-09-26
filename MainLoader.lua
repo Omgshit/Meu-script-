@@ -72,7 +72,7 @@ elseif game.PlaceId == 17258520007 then
 elseif game.PlaceId == 16474126979 then
     print ("Anime Fantasy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeFantasy"))()
-elseif game.PlaceId == 17639412521 then
+elseif game.PlaceId == 17639412521 or game.PlaceId == 18779461947 then
     print ("Re:XL")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Re%3AXL"))()
 elseif game.PlaceId == 16526087282 then
