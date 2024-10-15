@@ -50,6 +50,9 @@ elseif game.PlaceId == 10912405603 or game.PlaceId == 15076215032 then
 elseif game.PlaceId == 16146832113 or game.PlaceId == 16277809958 then
     print ("Suck My dick Anime Vanguards")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeVanguard"))()
+elseif game.PlaceId == 18901165922 then
+    print ("Pets will suck me")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/Pets%20Go"))()
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
