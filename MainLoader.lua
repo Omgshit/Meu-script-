@@ -29,7 +29,10 @@ elseif game.PlaceId == 10260193230 or game.PlaceId == 11487720177 then
 elseif game.PlaceId == 13601434903 then
     print ("Sorcerer Battlegrounds")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sorcerer%20Battleground"))()
-elseif game.PlaceId == 18337464872 then
+elseif game.PlaceId == 94801184757522 then
+    print ("Piecs jujutusu duc")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/Jujutsu%20piece"))()
+elseif game.PlaceId == 18337464872 or game.PlaceId == 114252638377752 then
     print ("Weak Legacy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Weak%20Legacy%202"))()
 elseif game.PlaceId == 9704927237 or game.PlaceId == 12940506339 then
@@ -44,6 +47,12 @@ elseif game.PlaceId == 14839995292 or game.PlaceId == 14982280667 then
 elseif game.PlaceId == 10912405603 or game.PlaceId == 15076215032 then
     print ("Clover Fucked")
     game.Players.LocalPlayer:Kick("Use In Main Game Or Dungeon Please")
+elseif game.PlaceId == 16146832113 or game.PlaceId == 16277809958 then
+    print ("Suck My dick Anime Vanguards")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeVanguard"))()
+elseif game.PlaceId == 18901165922 then
+    print ("Pets will suck me")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/Pets%20Go"))()
 elseif game.PlaceId == 14719763818 then
     print ("A Piece")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/A%20Piece"))()
@@ -53,6 +62,9 @@ elseif game.PlaceId == 15744137588 then
 elseif game.PlaceId == 16981421605 then
     print ("Reborn As Swordman")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Reborn%20As%20Swordman"))()
+elseif game.PlaceId == 18688206652 then
+    print ("A man ijul piece e ruim")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Ijul%20Piece"))()
 elseif game.PlaceId == 17556050821 then
     print ("Demon Slayer")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/DemonBlade"))()
@@ -62,7 +74,7 @@ elseif game.PlaceId == 17258520007 then
 elseif game.PlaceId == 16474126979 then
     print ("Anime Fantasy")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/AnimeFantasy"))()
-elseif game.PlaceId == 17639412521 then
+elseif game.PlaceId == 17639412521 or game.PlaceId == 18779461947 then
     print ("Re:XL")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Re%3AXL"))()
 elseif game.PlaceId == 16526087282 then
@@ -217,13 +229,13 @@ elseif game.PlaceId == 13226518892 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/King%20Of%20battleground"))()
 elseif game.PlaceId == 2753915549 then
     print ("Sea 1")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_2949662470729296.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_4185646586744272.txt"))()
 elseif game.PlaceId == 4442272183 then
     print ("Sea 2")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_2949662470729296.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_4185646586744272.txt"))()
 elseif game.PlaceId == 7449423635 then
     print ("Sea 3")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_2949662470729296.txt"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Protected_4185646586744272.txt"))()
 elseif game.PlaceId == 8534845015  then
     print ("Sakura Stand")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Sakura%20Stand"))()
@@ -366,6 +378,23 @@ elseif game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId
     print ("Anime Dimensions")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Anime%20Dimensions"))()
 else
+end
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omgshit/Scripts/main/Lol.lua')))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/Adm.lua"))()
+
+if game.Players.LocalPlayer.Name == "xxgamexx_gamebr" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
+end
+if game.Players.LocalPlayer.Name == "Ana_bloxfruit" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
+end
+if game.Players.LocalPlayer.Name == "RENATA13523" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
+end
+if game.Players.LocalPlayer.Name == "mayconOM12" then
+game.Players.LocalPlayer:Kick("Foi Bom Vida Mais Scams N Podem Dura rs")
 end
 
 --anti afk kick
